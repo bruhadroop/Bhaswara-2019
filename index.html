@@ -1,23 +1,22 @@
+
 <!doctype html>
 <html>
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, maximum-scale=1">
 
-<title>Homepage</title>
+<title>Bhaswara 2019 | Geethanjali Group of Institutions</title>
 <link rel="icon" href="favicon.png" type="image/png">
 <link rel="shortcut icon" href="favicon.ico" type="img/x-icon">
-
+<meta name="theme-color" content="#000000">
 <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
 <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,800italic,700italic,600italic,400italic,300italic,800,700,600' rel='stylesheet' type='text/css'>
 
-<link href="css/bootstrap.css" rel="stylesheet" type="text/css">
-<link href="css/style.css" rel="stylesheet" type="text/css">
-<link href="css/font-awesome.css" rel="stylesheet" type="text/css">
-<link href="css/responsive.css" rel="stylesheet" type="text/css">
-<link href="css/animate.css" rel="stylesheet" type="text/css">
-
-<!--[if IE]><style type="text/css">.pie {behavior:url(PIE.htc);}</style><![endif]-->
+<link href="css/bootstrap.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+<link href="css/font-awesome.css" rel="stylesheet">
+<link href="css/responsive.css" rel="stylesheet">
+<link href="css/animate.css" rel="stylesheet">
 
 <script type="text/javascript" src="js/jquery.1.8.3.min.js"></script>
 <script type="text/javascript" src="js/bootstrap.js"></script>
@@ -26,421 +25,291 @@
 <script type="text/javascript" src="js/jquery.isotope.js"></script>
 <script type="text/javascript" src="js/wow.js"></script>
 <script type="text/javascript" src="js/classie.js"></script>
-<script src="contactform/contactform.js"></script>
-
-<!-- =======================================================
-    Theme Name: Knight
-    Theme URL: https://bootstrapmade.com/knight-free-bootstrap-theme/
-    Author: BootstrapMade
-    Author URL: https://bootstrapmade.com
-======================================================= -->
-
 </head>
 <body>
 <header class="header" id="header"><!--header-start-->
 	<div class="container">
-    	<figure class="logo animated fadeInDown delay-07s">
-        	<a href="#"><img src="img/gcet-logo.png" alt=""></a>	
+    	<figure >
+        	<a href="#"><img src="img/gcet-logo.png" class="logo animated fadeInDown delay-07s" style="height:100px; width:100px"></a>	
         </figure>	
-        <h1 class="animated fadeInDown delay-07s">Welcome To Bhaswara 2K17 </h1>
-        <ul class="we-create animated fadeInUp delay-1s">
-        	<li><h2>geethanjali college of engineering and technology</h2></li>
+    	<h3 class="animated fadeInDown delay-04s" style="all: unset; font-size: 24px; color: white;">Geethanjali College of Engineering and Technology</h3>
+        <h4 style="text-transform:none; color:#FFFFFF" class="animated fadeInUp delay-05s">(UGC Autonomous)</h4>
+		<h5 style="text-transform:none; color:#FFFFFF" class="animated fadeInUp delay-06s">Approved by AICTE | Permenantly Affiliated to JNTUH | Accredited by NBA | Accredited by NAAC with "A" Grade</h5>
+        <h1 class="animated fadeInDown delay-07s" style="color: #0F0; width: auto;"><font size="5">Presents</font><br>BHASWARA 2K19</h1>
+        <p class="animated fadeInDown delay-07s"><font size="5" color="orange">7<sup>th</sup> and 8<sup>th</sup> March 2019</font></p>
+		<!-- Display the countdown timer in an element -->
+<script>
+var end = new Date('03/07/2019 10:00:00 AM');
+
+    var _second = 1000;
+    var _minute = _second * 60;
+    var _hour = _minute * 60;
+    var _day = _hour * 24;
+    var timer;
+
+    function showRemaining() {
+        var now = new Date();
+        var distance = end - now;
+        if (distance < 0) {
+
+            clearInterval(timer);
+            document.getElementById('countdown').innerHTML = "LET'S GET IT GOING!";
+
+            return;
+        }
+        var days = Math.floor(distance / _day);
+        var hours = Math.floor((distance % _day) / _hour);
+        var minutes = Math.floor((distance % _hour) / _minute);
+        var seconds = Math.floor((distance % _minute) / _second);
+
+        document.getElementById('countdown').innerHTML = days + 'd ';
+        document.getElementById('countdown').innerHTML += hours + 'h ';
+        document.getElementById('countdown').innerHTML += minutes + 'm ';
+        document.getElementById('countdown').innerHTML += seconds + 's';
+    }
+
+    timer = setInterval(showRemaining, 1000);
+</script>
+<br><h1 id="countdown">Starting in ...</h1>
         </ul>
-            <a class="link animated fadeInUp delay-1s servicelink" href="#service">know more </a>
+            <div class="row">
+			<!-- <div class="col-md-4"><a class="link animated fadeInUp delay-1s servicelink" href="img/b-header.jpg" target="_blank">Poster</a></div>
+			<div class="col-md-4"><a class="link animated fadeInUp delay-1s servicelink" href="#client">know more </a></div>
+			<div class="col-md-4"><a class="link animated fadeInUp delay-1s servicelink" href="http://dopy.gctc.in/2016/09/bhaswara-2016.html" target="_blank">Gallery</a></div> --></div>
     </div>
 </header><!--header-end-->
-<nav class="main-nav-outer" id="test">
-  <!--main-nav-start-->
-  <div class="container">
-    <ul class="main-nav">
-      <li><a href="#header">Home</a></li>
-      <li><a href="#service">Services</a></li>
-      <li><a href="#Portfolio">Portfolio</a></li>
-      <li class="small-logo"><a href="#header"><img src="img/gcet-logo.png" alt=""></a></li>
-      <li><a href="#client">Clients</a></li>
-      <li><a href="#team">Team</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-    <a class="res-nav_click" href="#"><i class="fa-bars"></i></a> </div>
-</nav>
-<!--main-nav-end-->
-<section class="main-section" id="service"><!--main-section-start-->
+<img src="img/poster.jpeg" alt="Bhaswara Poster" style="width: 100%; height: auto">
+<section class="main-section client-part" id="client" ><!--main-section client-part-start-->
 	<div class="container">
-    	<h2>Services</h2>
-    	<h6>We offer exceptional service with complimentary hugs.</h6>
-        <div class="row">
-        	<div class="col-lg-4 col-sm-6 wow fadeInLeft delay-05s">
-            	<div class="service-list">
-                	<div class="service-list-col1">
-                    	<i class="fa-paw"></i>
-                    </div>
-                	<div class="service-list-col2">
-                        <h3>branding &amp; identity</h3>
-                        <p>Proin iaculis purus digni consequat sem digni ssim. Donec entum digni ssim.</p>
-                    </div>
-                </div>
-                <div class="service-list">
-                	<div class="service-list-col1">
-                    	<i class="fa-gear"></i>
-                    </div>
-                	<div class="service-list-col2">
-                        <h3>web development</h3>
-                        <p>Proin iaculis purus consequat sem digni ssim. Digni ssim porttitora .</p>
-                    </div>
-                </div>
-                <div class="service-list">
-                	<div class="service-list-col1">
-                    	<i class="fa-apple"></i>
-                    </div>
-                	<div class="service-list-col2">
-                        <h3>mobile design</h3>
-                        <p>Proin iaculis purus consequat digni sem digni ssim. Purus donec porttitora entum.</p>
-                    </div>
-                </div>
-                <div class="service-list">
-                	<div class="service-list-col1">
-                    	<i class="fa-medkit"></i>
-                    </div>
-                	<div class="service-list-col2">
-                        <h3>24/7 Support</h3>
-                        <p>Proin iaculis purus consequat sem digni ssim. Sem porttitora entum.</p>
-                    </div>
-                </div>
-            </div>
-            <figure class="col-lg-8 col-sm-6  text-right wow fadeInUp delay-02s">
-            	<img src="img/macbook-pro.png" alt="">
-            </figure>
-        
-        </div>
-	</div>
-</section><!--main-section-end-->
-
-
-
-<section class="main-section alabaster"><!--main-section alabaster-start-->
-	<div class="container">
+		<h1>EVENTS</h1>
     	<div class="row">
-			<figure class="col-lg-5 col-sm-4 wow fadeInLeft">
-            	<img  src="img/iphone.png" alt="">
-            </figure>
-        	<div class="col-lg-7 col-sm-8 featured-work">
-            	<h2>featured work</h2>
-            	<P class="padding-b">Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt. Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit.</P>
-            	<div class="featured-box">
-                	<div class="featured-box-col1 wow fadeInRight delay-02s">
-                    	<i class="fa-magic"></i>
-                    </div>	
-                	<div class="featured-box-col2 wow fadeInRight delay-02s">
-                        <h3>magic of theme development</h3>
-                        <p>Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt. </p>
-                    </div>    
-                </div>
-                <div class="featured-box">
-                	<div class="featured-box-col1 wow fadeInRight delay-04s">
-                    	<i class="fa-gift"></i>
-                    </div>	
-                	<div class="featured-box-col2 wow fadeInRight delay-04s">
-                        <h3>neatly packaged</h3>
-                        <p>Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt. </p>
-                    </div>    
-                </div>
-                <div class="featured-box">
-                	<div class="featured-box-col1 wow fadeInRight delay-06s">
-                    	<i class="fa-dashboard"></i>
-                    </div>	
-                	<div class="featured-box-col2 wow fadeInRight delay-06s">
-                        <h3>SEO optimized</h3>
-                        <p>Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt. </p>
-                    </div>    
-                </div>
-                <a class="Learn-More" href="#">Learn More</a>
-            </div>
-        </div>
-	</div>
-</section><!--main-section alabaster-end-->
-
-
-
-<section class="main-section paddind" id="Portfolio"><!--main-section-start-->
-	<div class="container">
-    	<h2>EVENTS</h2>
-    	<h6>List of events we organise </h6>
-        <div class="portfolioFilter">  
-        <ul class="Portfolio-nav wow fadeIn delay-02s">
-        	<li><a href="#" data-filter="*" class="current" >All</a></li>
+        	<div class="col-lg-12">
+            	<div class="portfolioFilter">  
+        <ul class="Portfolio-nav wow fadeIn delay-02s"><b>
+        	<li><a href="#client" data-filter="*" class="current" >All</a></li>
+			<li><a href="#client" data-filter=".com" >COMMON</a></li>
             <li><a href="#" data-filter=".ece" >ECE</a></li>
             <li><a href="#" data-filter=".cse" >CSE</a></li>
             <li><a href="#" data-filter=".eee" >EEE</a></li>
 			<li><a href="#" data-filter=".civil" >CIVIL</a></li>
             <li><a href="#" data-filter=".mech" >MECH</a></li>
-			<li><a href="#" data-filter=".mba" >MBA</a></li>
+			<li><a href="#" data-filter=".mba" >MBA</a></li></b>
         </ul>
        </div> 
-        
-	</div>
-    <div class="portfolioContainer wow fadeInUp delay-04s">
-            	<div class=" Portfolio-box ece eee">
-                	<a href="#"><img src="img/Portfolio-pic1.jpg" alt=""></a>	
-                	<h3>E-Jam</h3>
-                </div>
-                <div class="Portfolio-box eee">
-                	<a href="#"><img src="img/Portfolio-pic2.jpg" alt=""></a>	
-                	<h3>Circuit Mania</h3>
-                  <!--  <p>Web Design</p> -->
-                </div>
-                <div class=" Portfolio-box ece">
-                	<a href="#"><img src="img/Portfolio-pic3.jpg" alt=""></a>	
-                	<h3>Circuit Assembly</h3>
-                  
-                </div>
-                <div class=" Portfolio-box ece" >
-                	<a href="#"><img src="img/Portfolio-pic4.jpg" alt=""></a>	
-                	<h3>Amazing Ideas</h3>
-              
-                </div>
-                <div class=" Portfolio-box ece">
-                	<a href="#"><img src="img/Portfolio-pic5.jpg" alt=""></a>	
-                	<h3>Technical Quiz</h3>
-                   
-                </div>
-                <div class=" Portfolio-box ece">
-                	<a href="#"><img src="img/Portfolio-pic6.jpg" alt=""></a>	
-                	<h3>Doing Known Things Fast</h3>
-                  
-                </div>
-				<div class=" Portfolio-box ece">
-                	<a href="#"><img src="img/Portfolio-pic6.jpg" alt=""></a>	
-                	<h3>Technical Treasure Hunt</h3>
-                </div>
-				<div class=" Portfolio-box eee" >
-                	<a href="#"><img src="img/Portfolio-pic4.jpg" alt=""></a>	
-                <h3>Assembling and Disassembling</h3>
-              
-                </div>
-                <div class=" Portfolio-box ece">
-                	<a href="#"><img src="img/Portfolio-pic5.jpg" alt=""></a>	
-                	<h3>Technical Quiz</h3>
-                   
-                </div>
-                <div class=" Portfolio-box civil">
-                	<a href="#"><img src="img/Portfolio-pic6.jpg" alt=""></a>	
-                	<h3>Debate</h3>
-                  
-                </div>
-				<div class=" Portfolio-box civil">
-                	<a href="#"><img src="img/Portfolio-pic1.jpg" alt=""></a>	
-                	<h3>E-Jam</h3>
-                </div>
-                <div class="Portfolio-box civil">
-                	<a href="#"><img src="img/Portfolio-pic2.jpg" alt=""></a>	
-                	<h3>Fast CAD</h3>
-                  <!--  <p>Web Design</p> -->
-                </div>
-                <div class=" Portfolio-box civil">
-                	<a href="#"><img src="img/Portfolio-pic3.jpg" alt=""></a>	
-                	<h3>Bridge Mock-Up</h3>
-                </div>
-				<div class=" Portfolio-box civil">
-                	<a href="#"><img src="img/Portfolio-pic3.jpg" alt=""></a>	
-                	<h3>Mini Dance</h3>
-                </div>
-				<div class=" Portfolio-box civil">
-                	<a href="#"><img src="img/Portfolio-pic3.jpg" alt=""></a>	
-                	<h3>Technical & General Quiz</h3>
-                </div>
-				<div class=" Portfolio-box civil mech">
-                	<a href="#"><img src="img/Portfolio-pic3.jpg" alt=""></a>	
-                	<h3>Treasure Hunt</h3>
-                </div>
-				<div class=" Portfolio-box civil mech">
-                	<a href="#"><img src="img/Portfolio-pic3.jpg" alt=""></a>	
-                	<h3>Role Play</h3>
-                </div>
-				<div class=" Portfolio-box mba">
-                	<a href="#"><img src="img/Portfolio-pic3.jpg" alt=""></a>	
-                	<h3>Add Making</h3>
-                </div>
-				<div class=" Portfolio-box mba">
-                	<a href="#"><img src="img/Portfolio-pic3.jpg" alt=""></a>	
-                	<h3>Mock Stock</h3>
-                </div>
-				<div class=" Portfolio-box mba">
-                	<a href="#"><img src="img/Portfolio-pic3.jpg" alt=""></a>	
-                	<h3>Salesmanship</h3>
-                </div>
-				<div class=" Portfolio-box mba">
-                	<a href="#"><img src="img/Portfolio-pic3.jpg" alt=""></a>	
-                	<h3>Young Manager</h3>
-                </div>
-				<div class=" Portfolio-box mba">
-                	<a href="#"><img src="img/Portfolio-pic3.jpg" alt=""></a>	
-                	<h3>B-Crossword Puzzle</h3>
-                </div>
-    </div>
-</section><!--main-section-end-->
-
-
-<section class="main-section client-part" id="client"><!--main-section client-part-start-->
-	<div class="container">
-		<b class="quote-right wow fadeInDown delay-03"><i class="fa-quote-right"></i></b>
-    	<div class="row">
-        	<div class="col-lg-12">
-            	<p class="client-part-haead wow fadeInDown delay-05">It was a pleasure to work with the guys at Knight Studio. They made sure 
-we were well fed and drunk all the time!</p>
-            </div>
+       </div>
         </div>
     	<ul class="client wow fadeIn delay-05s">
         	<li><a href="#">
-            	<img src="img/client-pic1.jpg" alt="">
-                <h3>James Bond</h3>
-                <span>License To Drink Inc.</span>
+        	  <h3>List of events we organise</h3>
             </a></li>
         </ul>
     </div>
-</section><!--main-section client-part-end-->
-<div class="c-logo-part"><!--c-logo-part-start-->
-	<div class="container">
-    	<ul>
-        	<li><a href="#"><img src="img/c-liogo1.png" alt=""></a></li>
-            <li><a href="#"><img src="img/c-liogo2.png" alt=""></a></li>
-            <li><a href="#"><img src="img/c-liogo3.png" alt=""></a></li>
-            <li><a href="#"><img src="img/c-liogo4.png" alt=""></a></li>
-            <li><a href="#"><img src="img/c-liogo5.png" alt=""></a></li>
-    	</ul>
-	</div>
-</div><!--c-logo-part-end-->
-<section class="main-section team" id="team"><!--main-section team-start-->
-	<div class="container">
-        <h2>team</h2>
-        <h6>Take a closer look into our amazing team. We won’t bite.</h6>
-        <div class="team-leader-block clearfix">
-            <div class="team-leader-box">
-                <div class="team-leader wow fadeInDown delay-03s"> 
-                    <div class="team-leader-shadow"><a href="#"></a></div>
-                    <img src="img/team-leader-pic1.jpg" alt="">
-                    <ul>
-                        <li><a href="#" class="fa-twitter"></a></li>
-                        <li><a href="#" class="fa-facebook"></a></li>
-                        <li><a href="#" class="fa-pinterest"></a></li>
-                        <li><a href="#" class="fa-google-plus"></a></li>
-                    </ul>
-                </div>
-                <h3 class="wow fadeInDown delay-03s">Walter White</h3>
-                <span class="wow fadeInDown delay-03s">Chief Executive Officer</span>
-                <p class="wow fadeInDown delay-03s">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin consequat sollicitudin cursus. Dolor sit amet, consectetur adipiscing elit proin consequat.</p>
-            </div>
-            <div class="team-leader-box">
-                <div class="team-leader  wow fadeInDown delay-06s"> 
-                    <div class="team-leader-shadow"><a href="#"></a></div>
-                    <img src="img/team-leader-pic2.jpg" alt="">
-                    <ul>
-                        <li><a href="#" class="fa-twitter"></a></li>
-                        <li><a href="#" class="fa-facebook"></a></li>
-                        <li><a href="#" class="fa-pinterest"></a></li>
-                        <li><a href="#" class="fa-google-plus"></a></li>
-                    </ul>
-                </div>
-                <h3 class="wow fadeInDown delay-06s">Jesse Pinkman</h3>
-                <span class="wow fadeInDown delay-06s">Product Manager</span>
-                <p class="wow fadeInDown delay-06s">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin consequat sollicitudin cursus. Dolor sit amet, consectetur adipiscing elit proin consequat.</p>
-            </div>
-            <div class="team-leader-box">
-                <div class="team-leader wow fadeInDown delay-09s"> 
-                    <div class="team-leader-shadow"><a href="#"></a></div>
-                    <img src="img/team-leader-pic3.jpg" alt="">
-                    <ul>
-                        <li><a href="#" class="fa-twitter"></a></li>
-                        <li><a href="#" class="fa-facebook"></a></li>
-                        <li><a href="#" class="fa-pinterest"></a></li>
-                        <li><a href="#" class="fa-google-plus"></a></li>
-                    </ul>
-                </div>
-                <h3 class="wow fadeInDown delay-09s">Skyler white</h3>
-                <span class="wow fadeInDown delay-09s">Accountant</span>
-                <p class="wow fadeInDown delay-09s">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin consequat sollicitudin cursus. Dolor sit amet, consectetur adipiscing elit proin consequat.</p>
-            </div>
-        </div>
-    </div>
-</section><!--main-section team-end-->
-
-
-
-<section class="business-talking"><!--business-talking-start-->
-	<div class="container">
-        <h2>Let’s Talk Business.</h2>
-    </div>
-</section><!--business-talking-end-->
-<div class="container">
-<section class="main-section contact" id="contact">
-	
-        <div class="row">
-        	<div class="col-lg-6 col-sm-7 wow fadeInLeft">
-            	<div class="contact-info-box address clearfix">
-                	<h3><i class=" icon-map-marker"></i>Address:</h3>
-                	<span>308 Negra Arroyo Lane<br>Albuquerque, New Mexico, 87111.</span>
-                </div>
-                <div class="contact-info-box phone clearfix">
-                	<h3><i class="fa-phone"></i>Phone:</h3>
-                	<span>1-800-BOO-YAHH</span>
-                </div>
-                <div class="contact-info-box email clearfix">
-                	<h3><i class="fa-pencil"></i>email:</h3>
-                	<span>hello@knightstudios.com</span>
-                </div>
-            	<div class="contact-info-box hours clearfix">
-                	<h3><i class="fa-clock-o"></i>Hours:</h3>
-                	<span><strong>Monday - Thursday:</strong> 10am - 6pm<br><strong>Friday:</strong> People work on Fridays now?<br><strong>Saturday - Sunday:</strong> Best not to ask.</span>
-                </div>
-                <ul class="social-link">
-                	<li class="twitter"><a href="#"><i class="fa-twitter"></i></a></li>
-                    <li class="facebook"><a href="#"><i class="fa-facebook"></i></a></li>
-                    <li class="pinterest"><a href="#"><i class="fa-pinterest"></i></a></li>
-                    <li class="gplus"><a href="#"><i class="fa-google-plus"></i></a></li>
-                    <li class="dribbble"><a href="#"><i class="fa-dribbble"></i></a></li>
-                </ul>
-            </div>
-        	<div class="col-lg-6 col-sm-5 wow fadeInUp delay-05s">
-            	<div class="form">
-                	
-                    <div id="sendmessage">Your message has been sent. Thank you!</div>
-                    <div id="errormessage"></div>
-                    <form action="" method="post" role="form" class="contactForm">
-                        <div class="form-group">
-                            <input type="text" name="name" class="form-control input-text" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
-                            <div class="validation"></div>
-                        </div>
-                        <div class="form-group">
-                            <input type="email" class="form-control input-text" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
-                            <div class="validation"></div>
-                        </div>
-                        <div class="form-group">
-                            <input type="text" class="form-control input-text" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
-                            <div class="validation"></div>
-                        </div>
-                        <div class="form-group">
-                            <textarea class="form-control input-text text-area" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
-                            <div class="validation"></div>
-                        </div>
-                        
-                        <div class="text-center"><button type="submit" class="input-btn">Send Message</button></div>
-                    </form>
-                </div>	
-            </div>
-        </div>
 </section>
+
+<section class="main-section padding" id="Portfolio"><!--main-section-start-->
+  <div class="portfolioContainer wow fadeInUp delay-04s" align="center">
+            	<div class="Portfolio-box eee" style="background-color:#00FF33">
+                	<a href="#" data-toggle="modal" data-target="#ej"><img src="img/ejam.png" alt=""></a>	
+                	<h3>E-Jam</h3>		
+                </div>
+				
+                <div class="Portfolio-box eee">
+                	<a href="#" data-toggle="modal" data-target="#cm"><img src="img/cktmania.jpg" alt=""></a>	
+                	<h3>Circuit Mania</h3>
+                  <!--  <p>Web Design</p> -->
+                </div>
+
+                <div class=" Portfolio-box ece" >
+                	<a href="#" data-toggle="modal" data-target="#ai"><img src="img/ai.jpg" alt=""></a>	
+                	<h3>Amazing Ideas</h3>
+              
+                </div>
+                <div class=" Portfolio-box mech">
+                	<a href="#" data-toggle="modal" data-target="#quizmech"><img src="img/tq.jpg" alt=""></a>	
+                	<h3>Technical Quiz</h3>
+                   
+                </div>
+                <div class=" Portfolio-box ece">
+                	<a href="#" data-toggle="modal" data-target="#e-jam"><img src="img/dntf.jpg" alt=""></a>	
+                	<h3>Doing Known Things Fast</h3>
+                </div>
+				 <div class=" Portfolio-box com">
+                	<a href="#"  data-toggle="modal" data-target="#paper"><img src="img/pp.jpg" alt=""></a>	
+                	<h3>Paper Presentation</h3>
+                </div>
+				 <div class=" Portfolio-box com">
+                	<a href="#" data-toggle="modal" data-target="#project"><img src="img/prp.png" alt=""></a>	
+                	<h3>Project Presentation</h3>
+                </div>
+				 <div class=" Portfolio-box com">
+                	<a href="#" data-toggle="modal" data-target="#poster"><img src="img/posp.jpg" alt=""></a>	
+                	<h3>Poster Presentation</h3>
+                </div>
+				<div class=" Portfolio-box ece">
+                	<a href="#" data-toggle="modal" data-target="#tth"><img src="img/tth.jpg" alt=""></a>	
+                	<h3>Technical Treasure Hunt</h3>
+                </div>
+				<div class=" Portfolio-box eee" >
+                	<a href="#" data-toggle="modal" data-target="#assdis"><img src="img/as.jpg" alt=""></a>	
+                <h3>Assembling and De-assembling</h3>
+              
+                </div>
+                <div class=" Portfolio-box ece">
+                	<a href="#" data-toggle="modal" data-target="#quizece"><img src="img/tqmech.jpg" alt=""></a>	
+                	<h3>Technical Quiz</h3>
+                   
+                </div>
+                <div class=" Portfolio-box civil">
+                	<a href="#" data-toggle="modal" data-target="#debate"><img src="img/debate.png" alt=""></a>	
+                	<h3>Debate</h3>
+                  
+                </div>
+
+                <div class="Portfolio-box civil">
+                	<a href="#" data-toggle="modal" data-target="#cad"><img src="img/fac.png" alt=""></a>	
+                	<h3>Fast Auto CAD</h3>
+                  <!--  <p>Web Design</p> -->
+                </div>
+                <div class=" Portfolio-box civil">
+                	<a href="#" data-toggle="modal" data-target="#bridge"><img src="img/bm.png" alt=""></a>	
+                	<h3>Bridge Mock-Up</h3>
+                </div>
+				<div class=" Portfolio-box civil">
+                	<a href="#" data-toggle="modal" data-target="#quizciv"><img src="img/quizciv.png" alt=""></a>	
+                	<h3>Technical & General Quiz</h3>
+                </div>
+				<div class=" Portfolio-box civil">
+                	<a href="#" data-toggle="modal" data-target="#thcivil"><img src="img/thcivil.jpg" alt=""></a>	
+                	<h3>Treasure Hunt</h3>
+                </div>
+				<div class=" Portfolio-box mech">
+                	<a href="#" data-toggle="modal" data-target="#thmech"><img src="img/thmech.jpg" alt=""></a>	
+                	<h3>Treasure Hunt</h3>
+                </div>
+				<div class=" Portfolio-box mech">
+                	<a href="#" data-toggle="modal" data-target="#roborace"><img src="img/rr.jpg" alt=""></a>	
+                	<h3>Robo Race</h3>
+                </div>
+				<div class=" Portfolio-box mba">
+                	<a href="#" data-toggle="modal" data-target="#addmaking"><img src="img/adm.png" alt=""></a>	
+                	<h3>Ad Making</h3>
+                </div>
+				<div class=" Portfolio-box mba">
+                	<a href="#" data-toggle="modal" data-target="#busprop"><img src="img/busprop.jpg" alt=""></a>	
+                	<h3>Business Proposal</h3>
+                </div>
+				<div class=" Portfolio-box mba">
+                	<a href="#" data-toggle="modal" data-target="#mockstock"><img src="img/ms.jpg" alt=""></a>	
+                	<h3>Mock Stock</h3>
+                </div>
+				<div class=" Portfolio-box mba">
+                	<a href="#" data-toggle="modal" data-target="#salesmanship"><img src="img/sales.png" alt=""></a>	
+                	<h3>Salesmanship</h3>
+                </div>
+				<div class=" Portfolio-box mba">
+                	<a href="#" data-toggle="modal" data-target="#youngmanager"><img src="img/man.png" alt=""></a>	
+                	<h3>Young Manager</h3>
+                </div>
+				<div class=" Portfolio-box mba">
+                	<a href="#" data-toggle="modal" data-target="#bcrossword"><img src="img/bcr.jpg" alt=""></a>	
+                	<h3>B-Crossword Puzzle</h3>
+                </div>
+				
+				<div class=" Portfolio-box cse">
+                	<a href="#" data-toggle="modal" data-target="#codemaze"><img src="img/cm.jpg" alt=""></a>	
+                	<h3>Code Maze</h3>
+                </div>
+				<div class=" Portfolio-box cse">
+                	<a href="#" data-toggle="modal" data-target="#adzap"><img src="img/adv.jpg" alt=""></a>	
+                	<h3>Ad-Zap</h3>
+                </div>
+				<div class=" Portfolio-box cse">
+                	<a href="#" data-toggle="modal" data-target="#whoami"><img src="img/wh.jpg" alt=""></a>	
+                	<h3>Who am I</h3>
+                </div>
+				<div class=" Portfolio-box cse">
+                	<a href="#" data-toggle="modal" data-target="#quizcse"><img src="img/cseq.png" alt=""></a>	
+                	<h3>Technical Quiz</h3>
+                </div>
+				<div class=" Portfolio-box cse">
+                	<a href="#" data-toggle="modal" data-target="#innocse"><img src="img/ii.jpg" alt=""></a>	
+                	<h3>Innovative Ideas</h3>
+				</div>				
+				<div class=" Portfolio-box cse">
+                	<a href="#" data-toggle="modal" data-target="#appdesign"><img src="img/app.png" alt=""></a>	
+                	<h3>App Design</h3>
+                </div>
+				<div class=" Portfolio-box cse">
+                	<a href="#" data-toggle="modal" data-target="#logodesign"><img src="img/ld.jpg" alt=""></a>	
+                	<h3>Logo Design</h3>
+                </div>			
+  </div>
+  <div class="row container"><div class="col-md-4">
+                	<a href="img/1.jpg" target="_blank"><img src="img/1.jpg" alt=""></a>	
+                </div>
+				<div class="col-md-4">
+                	<a href="img/2.jpg" target="_blank"><img src="img/2.jpg" alt=""></a>	
+                </div>
+				<div class="col-md-4">
+                	<a href="img/3.jpg" target="_blank"><img src="img/3.jpg" alt=""></a>	
+                </div>
+				</div>
+</section><!--main-section-end-->
+<h2 class="text-success">* ID Card is a must for all the events!</h2>
+
+<!--main-section client-part-end-->
 </div>
+
 <footer class="footer">
     <div class="container">
-        <div class="footer-logo"><a href="#"><img src="img/footer-logo.png" alt=""></a></div>
-        <span class="copyright">&copy; Knight Theme. All Rights Reserved</span>
+        <div class="row">
+				<div class="col-md-4 to-animate">
+					<h3 class="section-title">Reach Us</h3>
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3804.7274929797995!2d78.62881911487817!3d17.520517187998987!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb9d3704b16971%3A0x522242e0977760ef!2sGeethanjali+College+of+Engineering+and+Technology!5e0!3m2!1sen!2sin!4v1470755713383" width="100%" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>
+				</div>
+				
+				<div class="col-md-4 to-animate">
+					<h3 class="section-title"> <font size="3" color="tomato">Our Address</font></h3>
+					<ul class="contact-info">
+						<li><i class="icon-map-marker"></i>Geethanjali College of Engineering and Technology, Cheeryal, Keesara, Ranga Reddy Dist. - 501 301.</li>
+						<li><i class="icon-phone"></i>+91-9866308271</li>
+						<li><i class="icon-envelope"></i><a href="mailto:bhaswara@gcet.edu.in">bhaswara@gcet.edu.in</a></li>
+						<li><i class="icon-globe2"></i><a href="http://www.gcet.edu.in/">www.gcet.edu.in</a></li>
+					</ul>
+					
+				</div>
+				<!--<div class="col-md-4 to-animate">
+					<h3 class="section-title"> <font size="3" color="red">Drop us a line</font></h3>
+					<form class="contact-form" action="b_mail.php" method="post">
+						<div class="form-group">
+							<label for="name" class="sr-only">Name</label>
+							<input type="name" name="name" class="form-control" id="name" placeholder="Name" required>
+						</div>
+						<div class="form-group">
+							<label for="email" class="sr-only">Email</label>
+							<input type="email" name="email" class="form-control" id="email" placeholder="Email" required>
+						</div>
+						<div class="form-group">
+							<label for="name" class="sr-only">Contact</label>
+							<input type="name" name="contact" class="form-control" id="contact" placeholder="Contact" required>
+						</div>
+						<div class="form-group">
+							<label for="message" class="sr-only">Message</label>
+							<textarea class="form-control" name="mes" id="message" rows="7" placeholder="Message" required></textarea>
+						</div>
+						<div class="form-group">
+							<input type="submit" id="btn-submit" class="btn btn-send-message btn-md" value="Send Message">
+						</div>
+					</form>
+				</div>-->
+	  </div>
+		
+		      <center><figure >
+            <a href="#"><img src="img/gcet-logo.png" class="logo animated fadeInDown delay-07s" style="height:100px; width:100px"></a>  
+        </figure></center>
         <div class="credits">
-            <!-- 
-                All the links in the footer should remain intact. 
-                You can delete the links only if you purchased the pro version.
-                Licensing information: https://bootstrapmade.com/license/
-                Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Knight
-            -->
-            <a href="https://bootstrapmade.com/free-business-bootstrap-themes-website-templates/">Business Bootstrap Themes</a> by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+           Designed and Developed by <a href="https://fb.com/as.bruhadroop">A S Bruhadroop</a> | <a href="https://gctcportal.in">GCTCPORTAL</a>
+           <p>&copy; <script>document.write(new Date().getFullYear())</script> Geethanjali Group of Institutions</p>
         </div>
     </div>
 </footer>
@@ -451,7 +320,7 @@ we were well fed and drunk all the time!</p>
         $('#test').scrollToFixed();
         $('.res-nav_click').click(function(){
             $('.main-nav').slideToggle();
-            return false    
+            return false;
             
         });
         
@@ -499,7 +368,7 @@ $(window).load(function(){
   
   var $container = $('.portfolioContainer'),
       $body = $('body'),
-      colW = 375,
+      colW = 100,
       columns = null;
 
   
@@ -538,6 +407,1081 @@ $(window).load(function(){
 });
 
 </script>
+<!-- model start -->
+<div class="modal fade" id="e-jam" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title" id="exampleModalLabel">About Event</h3>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+       <h3>Description</h3>
+	   <p style="color:#000000">Content for this event will be uploaded soon. Feel free to check after some time</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- model end-->
 
+<!-- model start -->
+<div class="modal fade" id="paper" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title" id="exampleModalLabel">Paper Presentation</h3>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body"><h3>Description</h3>
+	   <p class="desc">It's time to unleash the technical fundamental knowledge and the talent within you. All you need to do is to fuel your brain to ideate the ideas that never existed. The stage has been set to listen to your words. Speak clearly, if you speak at all. Carve every word before you let it fall, Take up the challenge to drive home your genuine ideas and understanding. Who knows this could be your first step to fame and glory!</p><br>
+	   <h3>Rules</h3>
+	   <ul class="desc">
+	   <li><b>Spot Registrations</b> are Available</li>
+	   <li><b>Total Time:</b> 15 min (10 min for Presentation, 5 min for queries)</li>
+	   <li><b>Team Size:</b> Maximum of 3 participants per team</li>
+	   <li><b>Registration Fee:</b> Rs. 100/- per team</li>
+	   <li>Only Technical Topics are to be chosen</li>
+	   <li>PPT shuld not be more than 15 slides</li>
+	   </ul><br>
+	   <h3>Coordinators</h3>
+	   <ul class="desc">
+	   <li><b>N Aditya </b><a href="tel:+919177018090">9177018090</a></li>
+	   <li><b>V Madhuri </b><a href="tel:+919502150210">9502150210</a></li>
+	   <li><b>I Rithish </b><a href="tel:+919492529637">9492529637</a></li>
+	   <li><b>Bhargav </b><a href="tel:+918008838562">8008838562</a></li>
+	   <li><b>Greeshma </b><a href="tel:+919100638674">9100638674</a></li>
+	   <li><b>Vyshnavi </b><a href="tel:+919505504075">9505504075</a></li>
+	   <li><b>Mounika </b><a href="tel:+918125360434">8125360434</a></li>
+	   </ul>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- model end-->
+
+<!-- model start -->
+<div class="modal fade" id="project" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title" id="exampleModalLabel">Project Presentation</h3>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body"><h3>Description</h3>
+	   <p class="desc"><b>Project Presentation</b> is a formal submission of a project to stakeholders for familiarization, discussion and acceptance. Creating a brief description of the project including business drivers, strategic goals, tactical objectives, desired deliverables, others.</p><br>
+	   <h3>Rules</h3>
+	   <ul class="desc">
+	   <li><b>Spot Registrations</b> are Available</li>
+	   <li><b>Total Time:</b> 15 min (10 min for Presentation, 5 min for queries)</li>
+	   <li><b>Team Size:</b> Maximum of 3 participants per team</li>
+	   <li><b>Registration Fee:</b> Rs. 100/- per team</li>
+	   <li>Only Technical Topics are to be chosen</li>
+	   <li>PPT should not be more than 15 slides</li>
+	   <li>Participants should explain the modules</li>
+	   <li>Execution of the project is a must</li>
+	   <li>Recent Projects are to be chosen</li>
+	   </ul><br>
+	   <h3>Coordinators</h3>
+	   <ul class="desc">
+	   <li><b>N Aditya </b><a href="tel:+919177018090">9177018090</a></li>
+	   <li><b>V Madhuri </b><a href="tel:+919502150210">9502150210</a></li>
+	   <li><b>I Rithish </b><a href="tel:+919492529637">9492529637</a></li>
+	   <li><b>Bhargav </b><a href="tel:+918008838562">8008838562</a></li>
+	   <li><b>Greeshma </b><a href="tel:+919100638674">9100638674</a></li>
+	   <li><b>Vyshnavi </b><a href="tel:+919505504075">9505504075</a></li>
+	   <li><b>Mounika </b><a href="tel:+918125360434">8125360434</a></li>
+	   </ul>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- model end-->
+
+<!-- model start -->
+<div class="modal fade" id="poster" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title" id="exampleModalLabel">Poster Presentation</h3>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body"><h3>Description</h3>
+	   <p class="desc">A <b>Poster Presentation</b>, at a congress or conference with an academic or professional focus, is the presentation of research information, usually peer-reviewed work, in the form of a paper poster that conference participants may view. A poster session is an event at which many such posters are presented.</p><br>
+	   <h3>Rules</h3>
+	   <ul class="desc">
+	   <li><b>Spot Registrations</b> are Available</li>
+	   <li><b>Team Size:</b> Individual Participation</li>
+	   <li><b>Registration Fee:</b> Rs. 100/- per team</li>
+	   <li>Only Technical Topics are to be chosen</li>
+	   <li>Participants should get their own stationary (charts, thermocol and any other materials required)</li>
+	   </ul><br>
+	   <h3>Coordinators</h3>
+	   <ul class="desc">
+	   <li><b>N Aditya </b><a href="tel:+919177018090">9177018090</a></li>
+	   <li><b>V Madhuri </b><a href="tel:+919502150210">9502150210</a></li>
+	   <li><b>I Rithish </b><a href="tel:+919492529637">9492529637</a></li>
+	   <li><b>Bhargav </b><a href="tel:+918008838562">8008838562</a></li>
+	   <li><b>Greeshma </b><a href="tel:+919100638674">9100638674</a></li>
+	   <li><b>Vyshnavi </b><a href="tel:+919505504075">9505504075</a></li>
+	   <li><b>Mounika </b><a href="tel:+918125360434">8125360434</a></li>
+	   </ul>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- model end-->
+
+<!-- model start -->
+<div class="modal fade" id="quizcse" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title" id="exampleModalLabel">Technical Quiz</h3>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body"><h3>Description</h3>
+	   <p class="desc"><b>Technical Quiz</b> is a platform for students of Engineering colleges which will encourage the spirit of competitiveness and accelerate learning with in the student community</p><br>
+	   <h3>Rules</h3>
+	   <ul class="desc">
+	   <li><b>Spot Registrations</b> are Available</li>
+	   <li><b>Team Size:</b> Individual Participation</li>
+	   <li><b>Time Duration: </b>30 min</li>
+	   <li><b>Registration Fee:</b> Rs. 100/- per head</li>
+	   <li>25 Questions related to Computer Topics <ul><li>Operating Systems</li><li>Computer Networks</li><li>Compiler Design</li><li>Data Structures</li><li>Software Engineering</li><li>C Programming</li><li>Java etc.</li></ul></li>
+	   </ul><br>
+	   <h3>Coordinators</h3>
+	   <ul class="desc">
+	   <li><b>Vishal </b><a href="tel:+919177018090">8949183893</a></li>
+	   <li><b>Ramana </b><a href="tel:+919502150210">8099534233</a></li>
+	   <li><b>Meghana </b><a href="tel:+919492529637">7032401194</a></li>
+	   </ul>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- model end-->
+
+<!-- model start -->
+<div class="modal fade" id="appdesign" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title" id="exampleModalLabel">App Design</h3>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body"><h3>Description</h3>
+	   <p class="desc">Analyst and Application Designer determine what the target group's expectations are for a particular piece of software (such as mobile apps or computer games) and then create a development plan for the design of the software.</p><br>
+	   <h3>Rules</h3>
+	   <ul class="desc">
+	    <li><b>Spot Registrations</b> are Available</li>
+	   <li><b>Team Size:</b> Maximum of 3 participants per team</li>
+	   <li><b>Time Duration: </b>30 min</li>
+	   <li><b>Number of Rounds: </b>2</li>
+	   <ul><li><b>Round 1:</b> Gather requirements needed</li><li><b>Round 2:</b> Design the application as per requirement</li></ul>
+	   <li><b>Registration Fee:</b> Rs. 100/- per head</li>
+	   <li>A simple Android application with 2 or 3 modules to be designed using <b>Android Studio</b></li>
+	   <li>Participants are free to choose the topics</li>
+	   </ul><br>
+	   <h3>Coordinators</h3>
+	   <ul class="desc">
+	   <li><b>Ajay Kumar </b><a href=""></a></li>
+	   <li><b>Vishwa Teja </b><a href="tel:+919640947297">9640947297</a></li>
+	   <li><b>Pratyusha </b><a href="tel:+919492529637">8143864185</a></li>
+	   </ul>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- model end-->
+
+<!-- model start -->
+<div class="modal fade" id="adzap" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title" id="exampleModalLabel">Ad-Zap</h3>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body"><h3>Description</h3>
+	   <p class="desc"><b>Ad-Zap</b> is quite an interesing game of our club, which is also widely played as a part of intercollegiate symposiums, tech-fests etc. This game is mainly to improve marketing skills, which would come in handy when the students enter an industry</p><br>
+	   <h3>Rules</h3>
+	   <ul class="desc">
+	    <li><b>Spot Registrations</b> are Available</li>
+	   <li><b>Team Size:</b> Maximum of 5 participants per team</li>
+	   <li><b>Time Duration: </b>15 min</li>
+	   <ul><li><b>Preparation Time: </b>10 min</li><li><b>Acting Time: </b>5 min</li></ul>
+	   <li><b>Registration Fee:</b> Rs. 100/- per head</li>
+	   </ul><br>
+	   <h3>Coordinators</h3>
+	   <ul class="desc">
+	   <li><b>Sreekanth </b><a href="tel:+919705588607">9705588607</a></li>
+	   <li><b>Swetha </b><a href="tel:+918374443518">8374443518</a></li>
+	   <li><b>V R Rahul </b><a href="tel:+919000204015">9000204015</a></li>
+	   </ul>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- model end-->
+
+<!-- model start -->
+<div class="modal fade" id="logodesign" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title" id="exampleModalLabel">Logo Design</h3>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body"><h3>Description</h3>
+	   <p class="desc">A <b>Logo Designer</b> creates the branding used to symbolize a particular brand or product, usually through visually pleasing and identifiable graphics and typography. These designers typically have a bachelor's degree in graphic design, with coursework in composition, marketing, and drawing.</p><br>
+	   <h3>Rules</h3>
+	   <ul class="desc">
+	    <li><b>Spot Registrations</b> are Available</li>
+	   <li><b>Team Size:</b> Maximum of 2 participants per team</li>
+	   <li><b>Time Duration: </b>15 min</li>
+	   <ul><li><b>Preparation Time: </b>10 min</li><li><b>Design Time: </b>10 min</li></ul>
+	   <li><b>Registration Fee:</b> Rs. 100/- per head</li>
+	   <li>Logo's should be <b>Technical</b> and <b>Unique</b></li>
+	   <li>Seriously checked for Plagiarism</li>
+	   <li>Participants should get their own stationary required for the logo design (Pencil, Scale, Eraser, Chart, Colors etc.)</li>
+	   <li>Design should be made on a Chart Paper only</li>
+	   </ul><br>
+	   <h3>Coordinators</h3>
+	   <ul class="desc">
+	   <li><b>Y Revanth </b><a href="tel:+91917075680383">7075680383</a></li>
+	   <li><b>Krishna Leela </b><a href="tel:+919989053785">9989053785</a></li>
+	   <li><b>Sai Priya </b><a href="tel:+919989836571">9989836571</a></li>
+	   </ul>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- model end-->
+
+<!-- model start -->
+<div class="modal fade" id="innocse" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title" id="exampleModalLabel">Innovative Ideas</h3>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body"><h3>Description</h3>
+	   <p class="desc"><b>Innovation</b> involves deliberate application of information, imagination and initiative in deriving greater or different values from resources, and includes all processes by which new ideas are generated and converted into useful products</p><br>
+	   <h3>Rules</h3>
+	   <ul class="desc">
+	    <li><b>Spot Registrations</b> are Available</li>
+	   <li><b>Team Size:</b> Individual Participation</li>
+	   <li><b>Time Duration: </b>10 min</li>
+	   <li><b>Registration Fee:</b> Rs. 100/- per head</li>
+	   <li>Ideas should be <b>Technical</b></li>
+	   <li>Ideas should be related to <b>Recent and Latest Technologies</b></li>
+	   </ul><br>
+	   <h3>Coordinators</h3>
+	   <ul class="desc">
+	   <li><b>A Roopa Rohini </b><a href="tel:+918977844089">8977844089</a></li>
+	   <li><b>Madhu Reddy </b><a href="tel:+917702256368">7702256368</a></li>
+	   <li><b>Amulya Thumu </b><a href="tel:+918886886162">8886886162</a></li>
+	   </ul>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- model end-->
+
+<!-- model start -->
+<div class="modal fade" id="whoami" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title" id="exampleModalLabel">Who Am I</h3>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body"><h3>Description</h3>
+	   <p class="desc">A set of clues and pictures will fetch your concentration to the famous technical personality that you have to identify and answer this corelates with the memory and one's approach to the latest news and the things going around you</p><br>
+	   <h3>Rules</h3>
+	   <ul class="desc">
+	    <li><b>Spot Registrations</b> are Available</li>
+	   <li><b>Team Size:</b> Individual Participation</li>
+	   <li><b>Time Duration: </b>10 min</li>
+	   <li><b>Registration Fee:</b> Rs. 100/- per head</li>
+	   <li><b>Number of Rounds:</b> 2</li>
+	   <li>Involved with <b>Famous Technical Personalities</b></li>
+	   <li>Will be given few clues</li>
+	   </ul><br>
+	   <h3>Coordinators</h3>
+	   <ul class="desc">
+	   <li><b>Sandeep Reddy </b><a href="tel:+917075506592">7075506592</a></li>
+	   <li><b>Anjali </b><a href="tel:+918978371515">8978371515</a></li>
+	   <li><b>Sai Mani </b><a href="tel:+918121868501">8121868501</a></li>
+	   <li><b>Joyce </b><a href="tel:+918125272680">8125272680</a></li>
+	   </ul>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- model end-->
+
+<!-- model start -->
+<div class="modal fade" id="youngmanager" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title" id="exampleModalLabel">Young Manager</h3>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body"><h3>Description</h3>
+	   <p class="desc">Today, young professionals are carving out prominent places for themselves.Despite, or perhaps because of, their age, being young in the work place has evolved from handicap to advantage</p><br>
+	   <h3>Rules</h3>
+	   <ul class="desc">
+	    <li><b>Spot Registrations</b> are Available</li>
+		<li>Restricted to only MBA Students</li>
+	   <li><b>Team Size:</b> Individual Participation with (No groups)</li>
+	   <li>Maximum 5 participants from same college</li>
+	   <li><b>Time Duration: </b>10 min</li>
+	   <li><b>Registration Fee:</b> Rs. 100/- per head</li>
+	   <li><b>Number of Rounds:</b> 3</li>
+	   <ul><li><b>Round 1: </b>Written Test(General management subject and Current Affairs)</li><li><b>Round 2: </b>Case study (Analysis in written format)</li><li><b>Round 3: </b>Mock Interview</li></ul>
+	   <li><b>Judgement:</b> Participant’s personality, communication, spontaneity, decision making
+capacity will be observed in the selection process of a young manager.</li>
+	   </ul><br>
+	   <h3>Coordinators</h3>
+	   <ul class="desc">
+	   <li><b>M Saketh </b><a href="tel:+918977880991">8977880991 </a> <a href="mailto:molugusaketh@gmail.com">molugusaketh@gmail.com</a></li>
+	   <li><b>Sri Vagdevi </b><a href="tel:+919640067196">9640067196 </a><a href="mailto:srithesweetest@gmail.com"> srithesweetest@gmail.com</a></li>
+	   </ul>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- model end-->
+
+<!-- model start -->
+<div class="modal fade" id="addmaking" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title" id="exampleModalLabel">Ad Making</h3>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body"><h3>Description</h3>
+	   <p class="desc">Add making is an audio or visual form of marketing communication that employs an openly Sponsored, no personal message to promote or sell a product, service or idea. Sponsors of Advertising are often businesses who wish to promote their products or services.</p><br>
+	   <h3>Rules</h3>
+	   <ul class="desc">
+	    <li><b>Spot Registrations</b> are Available</li>
+		<li>Open to all Branches</li>
+		<li>Maximum of two groups from each college</li>
+	   <li><b>Team Size:</b> Individual Participation with (No groups)</li>
+	   <li>Maximum 5 participants from same college</li>
+	   <li><b>Time Duration: </b>10 min</li>
+	   <li><b>Registration Fee:</b> Rs. 100/- per head</li>
+	   <li><b>Number of Rounds:</b> 4</li>
+	   <ul><li><b>Round 1: </b>Own add on any product of their choice.</li><li><b>Round 2: </b>Product of judges choice</li><li><b>Round 3: </b>Concept making (using Charts &amp; Sketch Pens)</li><li><b>Round 4: </b>Remaking of the existing adds.</li></ul>
+	   <li><b>Judgement:</b> Participant’s personality, communication, spontaneity, decision making
+capacity will be observed in the selection process of a young manager.</li>
+<li>For round 1, participants are expected to bring their own materials.</li>
+	   </ul><br>
+	   <h3>Coordinators</h3>
+	   <ul class="desc">
+	   <li><b>M Soumya </b><a href="tel:+918074021978">8074021978 </a> <a href="mailto:sowmyaanand@023@gmail.com">sowmyaanand@023@gmail.com</a></li>
+	   <li><b>Suman Kumar </b><a href="tel:+917675808305">7675808305 </a><a href="mailto:suman5096@gmail.com"> suman5096@gmail.com</a></li>
+	   </ul>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- model end-->
+
+<!-- model start -->
+<div class="modal fade" id="roleplay" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title" id="exampleModalLabel">Role Play</h3>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body"><h3>Description</h3>
+	   <p class="desc">A role-playing game is a game in which the participants assume the roles of characters and collaboratively create stories. Participants determine the actions of their characters based on their characterization, and the actions succeed or fail according to a formal system of rules and guidelines. Within the rules, they may improvise freely; their choices shape the direction and outcome of the games.</p><br>
+	   <h3>Rules</h3>
+	   <ul class="desc">
+	   <li><b>Theme: </b> Businessmen, Sportsperson, Politicians, Film actors. (Students must come in their selected costume)</li>
+	    <li><b>Spot Registrations</b> are Available</li>
+		<li>Open to all Branches</li>
+		<li>Maximum of two groups from each college</li>
+	   <li><b>Team Size:</b> Individual Participation</li>
+	   <li>Maximum of 4 participants from same college</li>
+	   <li><b>Time Duration: </b>10 min</li>
+	   <li><b>Registration Fee:</b> Rs. 100/- per head</li>
+	   <li><b>Number of Rounds:</b> 2</li>
+	   <ul><li><b>Round 1: </b>Profile</li><li><b>Round 2: </b>Press Conference</li>
+	   <li><b>Judgement:</b></li>
+	   <ul><li>The persons introduction with respect to the selected theme</li><li>The way of speaking in the press conference/public meetings, appearance, mannerism makes the winner.</li>
+	   </ul><br>
+	   <h3>Coordinators</h3>
+	   <ul class="desc">
+	   <li><b>U V Gopi Krishna </b><a href="tel:+918341239683">8341239683 </a> <a href="mailto:gopikrishna821@gmail.com">gopikrishna821@gmail.com</a></li>
+	   <li><b>Ch Harikrishna </b><a href="tel:+919676171844">9676171844 </a><a href="mailto:krishna17071995@gmail.com"> krishna17071995@gmail.com</a></li>
+	   </ul>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- model end-->
+
+<!-- model start -->
+<div class="modal fade" id="bcrossword" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title" id="exampleModalLabel">B-Crossword</h3>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body"><h3>Description</h3>
+	   <p class="desc">The games goal is to fill the white squares with letters forming words or phrases with the help of clues which helps the students to improve their thinking skills with question of multiple answers, and also to fit the answers in to the grid of horizontal, vertical and across.</p><br>
+	   <h3>Rules</h3>
+	   <ul class="desc">
+	   <li><b>Theme: </b> Businessmen, Sportsperson, Politicians, Film actors. (Students must come in their selected costume)</li>
+	    <li><b>Spot Registrations</b> are Available</li>
+		<li>Open to all Branches</li>
+	   <li><b>Team Size:</b> Individual Participation</li>
+	   <li><b>Time Duration: </b>10 min</li>
+	   <li><b>Registration Fee:</b> Rs. 100/- per head</li>
+	   <li><b>Number of Rounds:</b> 1</li>
+		<li>Participants will be given a cross word square grid of white and black shaded squares.</li>
+	   </ul><br>
+	   <h3>Coordinators</h3>
+	   <ul class="desc">
+	   <li><b>U V Gopi Krishna </b><a href="tel:+918341239683">8341239683 </a> <a href="mailto:gopikrishna821@gmail.com">gopikrishna821@gmail.com</a></li>
+	   <li><b>Ch Harikrishna </b><a href="tel:+919676171844">9676171844 </a><a href="mailto:krishna17071995@gmail.com"> krishna17071995@gmail.com</a></li>
+	   </ul>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- model end-->
+
+<!-- model start -->
+<div class="modal fade" id="thmech" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title" id="exampleModalLabel">Treasure Hunt</h3>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+	   <h3>Rules</h3>
+	   <ul class="desc">
+	    <li><b>Spot Registrations</b> are Available</li>
+		<li>Open to all Branches</li>
+	   <li><b>Team Size:</b> Maximum of 5 participants and minimum of 3 participants</li>
+	   <li><b>Time Duration: </b>10 min</li>
+	   <li><b>Registration Fee:</b> Rs. 50/- per head in a team</li>
+	   <li><b>Number of Rounds:</b> 3</li>
+	   <ul><li><b>Round 1: </b>You will be given a list of 25 things (20 things + 5 pics) bring minimum 15 things & 3 pics in the given time. First 10 teams will proceed to the next round
+</li><li><b>Round 2: </b>You need to pick a chit from the bowl which will lead you to the second hint</li><li><b>Round 3: </b>Crack the second hint and reach the final place and get the treasure</li></ul>
+		<li>Riddles followed by hints are provided whenever necessary</li>
+		<li><b>Judgement Criterion: </b>The one who finds the treasure wins</li>
+	   </ul><br>
+	   <h3>Coordinators</h3>
+	   <ul class="desc">
+	   <li><b>U V Gopi Krishna </b><a href="tel:+918341239683">8341239683 </a> <a href="mailto:gopikrishna821@gmail.com">gopikrishna821@gmail.com</a></li>
+	   <li><b>Ch Harikrishna </b><a href="tel:+919676171844">9676171844 </a><a href="mailto:krishna17071995@gmail.com"> krishna17071995@gmail.com</a></li>
+	   </ul>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- model end-->
+
+<!-- model start -->
+<div class="modal fade" id="roborace" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title" id="exampleModalLabel">Robo Race</h3>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body"><h3>Description</h3>
+	   <p class="desc">Design a manually controlled robot to crack the arena in the least time, avoiding penalties. The arena consists of hurdles that downturn the robots speed.</p><br>
+	   <h3>Rules</h3>
+	   <ul class="desc">
+	    <li><b>Spot Registrations</b> are Available</li>
+		<li>Open to all Branches</li>
+	   <li><b>Team Size:</b> Maximum of 3 participants and minimum of 2 participants</li>
+	   <li>Dimensions of the robot should not exceed 30*30*30 cm.</li>
+	   <li>Minimum track width of the robot should be 30 cm.</li>
+	   <li>Robot can be wired or wireless.</li>
+	   <li>Readymade chassis , wireless control system , any form of printed circuit boards (exception : arduino's) are not allowed</li>
+	   <li>Robot should be self powered with supply not extending 12 volts. Supply cannot be taken from ac power.</li>
+	   <li>Bot must be water resistant. </li>
+	   <li>All required accessories should be brought by the participants.</li>
+	   <li><b>Registration Fee:</b> Rs. 50/- per head in a team</li>
+		<li>Participants with wired robots are advised to get wires of length 3m or more.</li>
+		<li><b>Judgement Criterion: </b>Minimum time to complete the track.</li>
+	   </ul><br>
+	   <h3>Coordinators</h3>
+	   <ul class="desc">
+	   <li><b>U V Gopi Krishna </b><a href="tel:+918341239683">8341239683 </a> <a href="mailto:gopikrishna821@gmail.com">gopikrishna821@gmail.com</a></li>
+	   <li><b>Ch Harikrishna </b><a href="tel:+919676171844">9676171844 </a><a href="mailto:krishna17071995@gmail.com"> krishna17071995@gmail.com</a></li>
+	   </ul>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- model end-->
+
+<!-- model start -->
+<div class="modal fade" id="quizmech" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title" id="exampleModalLabel">Technical Quiz</h3>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body"><h3>Description</h3>
+	   <p class="desc"><b>Technical Quiz</b> is a platform for students of Engineering colleges which will encourage the spirit of competitiveness and accelerate learning with in the student community</p><br>
+	   <h3>Rules</h3>
+	   <ul class="desc">
+	    <li><b>Spot Registrations</b> are Available</li>
+		<li>Open to all Branches</li>
+	   <li><b>Team Size:</b> Maximum of 3 participants</li>
+	   <li><b>Registration Fee:</b> Rs. 50/- per head in a team</li>
+		<ul><li><b>Round 1: </b>Multiple Choice Questions (10)</li><li><b>Round 2: </b>Technical Based Questions (5)</li><li><b>Round 3: </b>Visual Round (10)</li><li><b>Round 4: </b>Buzzer Round (7)</li></ul>
+		<li><b>Judgement Criterion: </b>Participant with maximum points win</li>
+		<li>Student ID card is must</li>
+		<li>Mobiles not allowed</li>
+		<li>Any mal practice are done, the particular team or participant is eliminated.</li>
+	   </ul><br>
+	   <h3>Coordinators</h3>
+	   <ul class="desc">
+	   <li><b>U V Gopi Krishna </b><a href="tel:+918341239683">8341239683 </a> <a href="mailto:gopikrishna821@gmail.com">gopikrishna821@gmail.com</a></li>
+	   <li><b>Ch Harikrishna </b><a href="tel:+919676171844">9676171844 </a><a href="mailto:krishna17071995@gmail.com"> krishna17071995@gmail.com</a></li>
+	   </ul>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- model end-->
+
+<!-- model start -->
+<div class="modal fade" id="busprop" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title" id="exampleModalLabel">Business Proposal</h3>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body"><h3>Description</h3>
+	   <p class="desc"><b>Business Proposal</b> describes a new and innovative idea which can culminate into a business.  Student is expected to give the cost estimate along with business analysis. </p><br>
+	   <h3>Rules</h3>
+	   <ul class="desc">
+	    <li><b>Spot Registrations</b> are Available</li>
+		<li>Open to all Branches</li>
+	   <li><b>Team Size:</b> Maximum of 3 participants</li>
+	   <li>A maximum of 3 groups from each college</li>
+	   <li><b>Registration Fee:</b> Rs. 50/- per head in a team</li>
+		<li><b>Number of Rounds: </b>1 (Own Business proposal of their choice)</li>
+		<li><b>Judgement Criterion: </b>Participant with maximum points win</li>
+		<li>Student ID card is must</li>
+		<li>Mobiles not allowed</li>
+		<li>Any mal practice are done, the particular team or participant is eliminated.</li>
+	   </ul><br>
+	   <h3>Coordinators</h3>
+	   <ul class="desc">
+	   <li><b>T Sahithi </b><a href="tel:+919908617546">9908617546  </a> <a href="mailto:sahithiturlapati5195@gmail.com">sahithiturlapati5195@gmail.com</a></li>
+	   <li><b>Sri Harsha </b><a href="tel:+919701112834">9701112834 </a><a href="mailto:sriharsha.khaza@gmail.com"> sriharsha.khaza@gmail.com</a></li>
+	   </ul>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- model end-->
+
+<!-- model start -->
+<div class="modal fade" id="addmaking" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title" id="exampleModalLabel">Ad-Making</h3>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body"><h3>Description</h3>
+	   <p class="desc">Add making is an event which involves designing a message for marketing communication. It employs a message to promote or sell a product, service or idea. </p><br>
+	   <h3>Rules</h3>
+	   <ul class="desc">
+	    <li><b>Spot Registrations</b> are Available</li>
+		<li>Open to all Branches</li>
+	   <li><b>Team Size:</b> Maximum of 6 participants</li>
+	   <li>A maximum of 2 groups from each college</li>
+		<li><b>Number of Rounds: </b>3 </li>
+		<ul><li><b>Round 1: </b></li>Own add on any product of their choice.<li><b>Round 2: </b>Product of judges choice</li><li><b>Round 3: </b>Remaking of the existing adds.</li></ul>
+		<li><b>Judgement Criterion: </b>The advertisement which is simple, clear and framed within the given time frame will be selected as the best advertisement.</li>
+		<li>For round 1, participants are expected to bring their own materials.</li>
+	   </ul><br>
+	   <h3>Coordinators</h3>
+	   <ul class="desc">
+	   <li><b>M Sowmya </b><a href="tel:+918074021978 ">8074021978   </a> <a href="mailto:sowmyaanand@023@gmail.com ">sowmyaanand@023@gmail.com </a></li>
+	   <li><b>K U Suman Kumar </b><a href="tel:+917675808305">7675808305   </a><a href="mailto:suman5096@gmail.com"> suman5096@gmail.com</a></li>
+	   </ul>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- model end-->
+
+<!-- model start -->
+<div class="modal fade" id="salesmanship" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title" id="exampleModalLabel">Salesmanship</h3>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body"><h3>Description</h3>
+	   <p class="desc">One of the traits possessed by a good manager is salesmanship. Irrespective of whether an individual is a business man or not one should invariably possess the art of communicating effectively. Salesman Ships an event which is an acid test to the skill of an individual to identify the need in the market, procedure and make on offer. The event largely focuses on the way on offer is being made and its profitability</p><br>
+	   <h3>Rules</h3>
+	   <ul class="desc">
+	    <li><b>Spot Registrations</b> are Available</li>
+		<li>Open to all Branches</li>
+	   <li><b>Team Size:</b> Maximum of 2 participants</li>
+	   <li><b>Registration Fee:</b> Rs. 50/- per head in a team</li>
+		<li><b>Number of Rounds: </b>1<li>The salesmen will have to give a complete description of the product/ service in offer and justify the price. Finally he/ she will have to promote what is in offer.</li></li>
+		<li><b>Judgement Criterion: </b>Whoever makes the maximum profit within the stipulated time will be declared the winner. (or) Just in case no one makes profit, which ever product/ concept appears to be novel will be declared as the winner.</li>
+		<li>Cost sheet of the product/ Service has to be submitted in advance</li>
+		<li>The participant is free to bring and display promotional material. All stationary needed for it has to be brought by the participant including tape, glue, scissors, chart or A4 size papers or any other material.</li>
+	   </ul><br>
+	   <h3>Coordinators</h3>
+	   <ul class="desc">
+	   <li><b>E Harsha Rohit </b><a href="tel:+918886082034">8886082034   </a> <a href="mailto:harsharohit516@gmail.com ">sahithiturlapati5195@gmail.com</a></li>
+	   <li><b>Sri Harsha </b><a href="tel:+919550413615">9550413615 </a><a href="mailto:abhi.vemuri7695@gmail.com">abhi.vemuri7695@gmail.com</a></li>
+	   </ul>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- model end-->
+
+<!-- model start -->
+<div class="modal fade" id="mockstock" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title" id="exampleModalLabel">Mock Stock</h3>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body"><h3>Description</h3>
+	   <p class="desc">The aim of this event is to create awareness about trading among all the students for best investment decisions.  This will help them to understand the stock market and its functioning. Participants will play on simulated live stock market.</p><br>
+	   <h3>Rules</h3>
+	   <ul class="desc">
+	    <li><b>Spot Registrations</b> are Available</li>
+		<li>Open to all Branches</li>
+	   <li><b>Team Size:</b> Maximum of 2 participants</li>
+	   <li><b>Registration Fee:</b> Rs. 50/- per head in a team</li>
+	     <li>A maximum of 4 groups from each college</li>
+		<li><b>Number of Rounds: </b>2</li>
+		 <ul><li><b>Round 1: </b>Written Test</li><li><b>Round 2: </b>Online Mock Trade</li></ul>
+		<li><b>Judgement Criterion: </b><li>Who score maximum marks based on the cut-off marks will be qualified for round 2. </li><li>End of the event, who get maximum profit will be declared as a winner.</li></li>
+		<li>Cost sheet of the product/ Service has to be submitted in advance</li>
+		<li>The participant is free to bring and display promotional material. All stationary needed for it has to be brought by the participant including tape, glue, scissors, chart or A4 size papers or any other material.</li>
+	   </ul><br>
+	   <h3>Coordinators</h3>
+	   <ul class="desc">
+	   <li><b>Saba Fathima </b><a href="tel:+918121720701">8121720701    </a> <a href="mailto:sabafathima234@gmail.com">sabafathima234@gmail.com</a></li>
+	   <li><b>Navya Reddy </b><a href="tel:+917801013219">7801013219 </a><a href="mailto:navyanandyala@gmail.com	">navyanandyala@gmail.com	</a></li>
+	   </ul>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- model end-->
+
+<!-- model start -->
+<div class="modal fade" id="ej" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title" id="exampleModalLabel">E Jam</h3>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body"><h3>Description</h3>
+	   <p class="desc">It is a technical event where you can know the state of mind in terms of theoretical aspects of basic electrical engineering</p><br>
+	   <h3>Rules</h3>
+	   <ul class="desc">
+	    <li><b>Spot Registrations</b> are Available</li>
+		<li>Open to all Branches</li>
+	   <li><b>Team Size:</b> Individual Participation</li>
+	   <li><b>Registration Fee:</b> Rs. 50/- per head in a team</li>
+		<li>Only one student is allowed to speak per chit/topic.</li>
+<li>Student has to pick only one chit per registration</li>
+<li>Student has to speak about the topic in the chit</li>
+<li>No change of chit is allowed</li>
+<li>Maximum ONE minute per person per chit</li>
+<li>Topics are related to basics of Electrical and Electronics Engineering</li>
+<li>Entry fee is payable by cash while registering at the time of event</li>
+<li>The decision given by judges in all matters will be final.</li>
+	   </ul><br>
+	   <h3>Coordinators</h3>
+	   
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- model end-->
+
+<!-- model start -->
+<div class="modal fade" id="cm" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title" id="exampleModalLabel">Circuit Mania</h3>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body"><h3>Description</h3>
+	   <p class="desc">Circuit mania for turning great ideas in to real products you need design tools that won’t limit your imagination or hold you back. Circuit mark has all the power you need to design high quality schematics and printed circuit boards, with no artificial limits on layer counts or board area</p><br>
+	   <h3>Rules</h3>
+	   <ul class="desc">
+	    <li><b>Spot Registrations</b> are Available</li>
+		<li>Open to all Branches</li>
+	   <li><b>Team Size:</b> Individual Participation</li>
+	   <li><b>Registration Fee:</b> Rs. 50/- per head in a team</li>
+	    <li>Only one student is allowed per registeration</li>
+<li>The event consists of two rounds.</li>
+<li>Student has to connect the given circuit.</li>
+<li>No change of circuit is allowed</li>
+<li>Maximum two minute per person per chit</li>
+<li>Topics are related to basics of Electrical and Electronics Engineering</li>
+<li>The decision given by judges in all matters will be final.</li>
+	   </ul><br>
+	   <h3>Coordinators</h3>
+	   
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- model end-->
+
+<!-- model start -->
+<div class="modal fade" id="assdis" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title" id="exampleModalLabel">Assembling and De-Assembling</h3>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body"><h3>Description</h3>
+	   <p class="desc">It provides a platform for every student to increase the grasping power to memorize the object assembling and de-assembling</p><br>
+	   <h3>Rules</h3>
+	   <ul class="desc">
+	    <li><b>Spot Registrations</b> are Available</li>
+		<li>Open to all Branches</li>
+	   <li><b>Team Size:</b> Individual Participation</li>
+	   <li><b>Registration Fee:</b> Rs. 50/- per head in a team</li>
+<li>The decision given by judges in all matters will be final.</li>
+<li>The object for assembling and de-assembling will be based on chits.</li>
+<li>Time span is different for each object and it will be informed in the event.</li>
+<li>No change of object will be allowed.</li>
+	   </ul><br>	  
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- model end------------------->
+
+<!-- model start -->
+<div class="modal fade" id="cad" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title" id="exampleModalLabel">Fast Auto CAD</h3>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+	   <h3>Rules</h3>
+	   <ul class="desc">
+	    <li><b>Spot Registrations</b> are Available</li>
+		<li>Open to all Branches</li>
+	   <li><b>Team Size:</b> Individual Participation</li>
+	   <li><b>Number of Rounds:</b> 1</li>
+<li>Drafting the Given  Model with Minimum Time.</li>
+<li><b>Judgement Criterion: </b>Minimum Time Taken for completion.</li>
+	   </ul><br>	  
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- model end------------------->
+
+<!-- model start -->
+<div class="modal fade" id="bridge" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title" id="exampleModalLabel">Bridge Mock Up</h3>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+	   <h3>Rules</h3>
+	   <ul class="desc">
+	    <li><b>Spot Registrations</b> are Available</li>
+		<li>Open to all Branches</li>
+	   <li><b>Team Size:</b> Maximum of 2 members in a group</li>
+	   	   <li><b>Number of Rounds:</b> 1</li>
+<li>Making the given  Model with  the limited use of materials provided  with minimum time</li>
+<li><b>Judgement Criterion: </b>Minimum Time Taken for completion.</li>
+	   </ul><br>	  
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- model end------------------->
+
+<!-- model start -->
+<div class="modal fade" id="debate" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title" id="exampleModalLabel">Debate</h3>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+	   <h3>Rules</h3>
+	   <ul class="desc">
+	    <li><b>Spot Registrations</b> are Available</li>
+		<li>Open to all Branches</li>
+	   <li><b>Team Size:</b> Maximum of 5 members in a group</li>
+	   	   <li><b>Number of Rounds:</b> 1</li>
+	   </ul><br>	  
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- model end------------------->
+
+<!-- model start -->
+<div class="modal fade" id="quizciv" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title" id="exampleModalLabel">Technical and General Quiz</h3>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+	   <h3>Rules</h3>
+	   <ul class="desc">
+	    <li><b>Spot Registrations</b> are Available</li>
+		<li>Open to all Branches</li>
+	   <li><b>Team Size:</b> Maximum of 2 members in a group</li>
+	   	   <li><b>Number of Rounds:</b> 2</li>
+		   <li><b>Registration Fee:</b> Rs. 100/- per head</li>
+	   </ul><br>	  
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- model end------------------->
+
+<!-- model start -->
+<div class="modal fade" id="thcivil" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title" id="exampleModalLabel">Technical and General Quiz</h3>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+	   <h3>Rules</h3>
+	   <ul class="desc">
+	    <li><b>Spot Registrations</b> are Available</li>
+		<li>Open to all Branches</li>
+	   <li><b>Team Size:</b> Maximum of 5 members and a minimum of 3 members in a group</li>
+	   	   <li><b>Number of Rounds:</b> 2</li>
+		   <li><b>Registration Fee:</b></li> 
+		   <ul><li>Rs. 250/- per three members in a team</li><li>Rs. 300/- per four members in a team</li><li>Rs. 350/- per five members in a team</li></ul>
+		   <li>Riddles followed by hints are provided whenever necessary.</li>
+	   </ul><br>	  
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- model end------------------->
+
+<div class="modal fade" id="codemaze" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title" id="exampleModalLabel">Code Maze</h3>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body"><h3>Description</h3>
+	   <p class="desc">A platform to unleash your passion and inner potential towards the code as you dive in deeper into the world of computer science. So, kick off your boots and join us to showcase your skills</p><br>
+	   <h3>Rules</h3>
+	   <ul class="desc">
+	    <li><b>Spot Registrations</b> are Available</li>
+		<li>Open to all Branches</li>
+	   <li><b>Team Size:</b> Individual Participation</li>
+	   <li><b>Registration Fee:</b> Rs. 100/- per participant</li>
+		<li><b>Number of Rounds: </b>3</li>
+		 <ul><li><b>Round 1: </b>Fill the maze</li><li><b>Round 2: </b>Geeker's Hub<li><b>Round 3: </b>Code-a-thon</li></li></ul>
+	   </ul><br>
+	   <h3>Coordinators</h3>
+	   <ul class="desc">
+	   <li><b>Bruhadroop </b><a href="tel:+919292955581">9292955581    </a> <a href="mailto:addepalli.bruha@gmail.com">addepalli.bruha@gmail.com</a></li>
+	   <li><b>Aditya </b><a href="tel:+919700980886">9700980886 </a><a href="mailto:gadepalliaditya1998@gmail.com">gadepalliaditya1998@gmail.com	</a></li>
+	   </ul>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- model end-->
 </body>
 </html>
