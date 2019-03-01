@@ -1,4 +1,3 @@
-
 <!doctype html>
 <html>
 <head>
@@ -40,34 +39,28 @@
 		<!-- Display the countdown timer in an element -->
 <script>
 var end = new Date('03/07/2019 10:00:00 AM');
-
     var _second = 1000;
     var _minute = _second * 60;
     var _hour = _minute * 60;
     var _day = _hour * 24;
     var timer;
-
     function showRemaining() {
         var now = new Date();
         var distance = end - now;
         if (distance < 0) {
-
             clearInterval(timer);
             document.getElementById('countdown').innerHTML = "LET'S GET IT GOING!";
-
             return;
         }
         var days = Math.floor(distance / _day);
         var hours = Math.floor((distance % _day) / _hour);
         var minutes = Math.floor((distance % _hour) / _minute);
         var seconds = Math.floor((distance % _minute) / _second);
-
         document.getElementById('countdown').innerHTML = days + 'd ';
         document.getElementById('countdown').innerHTML += hours + 'h ';
         document.getElementById('countdown').innerHTML += minutes + 'm ';
         document.getElementById('countdown').innerHTML += seconds + 's';
     }
-
     timer = setInterval(showRemaining, 1000);
 </script>
 <br><h1 id="countdown">Starting in ...</h1>
@@ -109,48 +102,48 @@ var end = new Date('03/07/2019 10:00:00 AM');
 <section class="main-section padding" id="Portfolio"><!--main-section-start-->
   <div class="portfolioContainer wow fadeInUp delay-04s" align="center">
 		<div class=" Portfolio-box eee">
-        	<a href="#" data-toggle="modal" data-target="#eee-paper"><img src="img/ld.jpg" alt="Paper Presentation"></a>	
-        	<h3>Paper Presentation</h3>
+        	<a href="#" data-toggle="modal" data-target="#eee-paper"><img src="img/pp.jpg" alt="Paper Presentation"></a>	
+        	<h3>EEE Paper Presentation</h3>
         </div>
         <div class=" Portfolio-box eee">
-        	<a href="#" data-toggle="modal" data-target="#eee-project"><img src="img/ld.jpg" alt="Project Presentation"></a>	
-        	<h3>Project Presentation</h3>
+        	<a href="#" data-toggle="modal" data-target="#eee-project"><img src="img/prp.jpg" alt="Project Presentation"></a>	
+        	<h3>EEE Project Presentation</h3>
         </div>
         <div class=" Portfolio-box eee">
-        	<a href="#" data-toggle="modal" data-target="#eee-poster"><img src="img/ld.jpg" alt="Poster Presentation"></a>	
-        	<h3>Poster Presentation</h3>
+        	<a href="#" data-toggle="modal" data-target="#eee-poster"><img src="img/posp.jpg" alt="Poster Presentation"></a>	
+        	<h3>EEE Poster Presentation</h3>
         </div>
         <div class=" Portfolio-box eee">
-        	<a href="#" data-toggle="modal" data-target="#eee-ejam"><img src="img/ld.jpg" alt="E-Jam"></a>	
+        	<a href="#" data-toggle="modal" data-target="#eee-ejam"><img src="img/dntf.jpg" alt="E-Jam"></a>	
         	<h3>E-Jam</h3>
         </div>
         <div class=" Portfolio-box eee">
-        	<a href="#" data-toggle="modal" data-target="#eee-circuit"><img src="img/ld.jpg" alt="Circuit Mania"></a>	
+        	<a href="#" data-toggle="modal" data-target="#eee-circuit"><img src="img/cktmania.jpg" alt="Circuit Mania"></a>	
         	<h3>Circuit Mania</h3>
         </div>
         <div class=" Portfolio-box eee">
-        	<a href="#" data-toggle="modal" data-target="#eee-guesswhat"><img src="img/ld.jpg" alt="Guess What"></a>	
+        	<a href="#" data-toggle="modal" data-target="#eee-guesswhat"><img src="img/wh.jpg" alt="Guess What"></a>	
         	<h3>Guess What</h3>
         </div>
         <div class=" Portfolio-box eee">
-        	<a href="#" data-toggle="modal" data-target="#eee-assembly"><img src="img/ld.jpg" alt="Assembly & Dis-Assembly"></a>
+        	<a href="#" data-toggle="modal" data-target="#eee-assembly"><img src="img/as.jpg" alt="Assembly & Dis-Assembly"></a>
         	<h3>Assembly & Dis-Assembly</h3>
         </div>
 
         <div class=" Portfolio-box civil">
-        	<a href="#" data-toggle="modal" data-target="#civil-paper"><img src="img/ld.jpg" alt="Paper Presentation"></a>
-        	<h3>Paper Presentation</h3>
+        	<a href="#" data-toggle="modal" data-target="#civil-paper"><img src="img/pp.jpg" alt="Paper Presentation"></a>
+        	<h3>Civil Paper Presentation</h3>
         </div>
         <div class=" Portfolio-box civil">
-        	<a href="#" data-toggle="modal" data-target="#civil-poster"><img src="img/ld.jpg" alt="Poster Presentation"></a>
-        	<h3>Poster Presentation</h3>
+        	<a href="#" data-toggle="modal" data-target="#civil-poster"><img src="img/posp.jpg" alt="Poster Presentation"></a>
+        	<h3>Civil Poster Presentation</h3>
         </div>
         <div class=" Portfolio-box civil">
-        	<a href="#" data-toggle="modal" data-target="#civil-project"><img src="img/ld.jpg" alt="Project Presentation"></a>
-        	<h3>Project Presentation</h3>
+        	<a href="#" data-toggle="modal" data-target="#civil-project"><img src="img/prp.jpg" alt="Project Presentation"></a>
+        	<h3>Civil Project Presentation</h3>
         </div>
         <div class=" Portfolio-box civil">
-        	<a href="#" data-toggle="modal" data-target="#civil-treasure"><img src="img/ld.jpg" alt="Treasure Hunt"></a>
+        	<a href="#" data-toggle="modal" data-target="#civil-treasure"><img src="img/tth.jpg" alt="Treasure Hunt"></a>
         	<h3>Treasure Hunt</h3>
         </div>
         <div class=" Portfolio-box civil">
@@ -158,63 +151,89 @@ var end = new Date('03/07/2019 10:00:00 AM');
         	<h3>Study the Structure</h3>
         </div>
         <div class=" Portfolio-box civil">
-        	<a href="#" data-toggle="modal" data-target="#civil-debate"><img src="img/ld.jpg" alt="Debate"></a>
+        	<a href="#" data-toggle="modal" data-target="#civil-debate"><img src="img/debate.jpg" alt="Debate"></a>
         	<h3>Debate</h3>
         </div>
         <div class=" Portfolio-box civil">
-        	<a href="#" data-toggle="modal" data-target="#civil-mockup"><img src="img/ld.jpg" alt="Bridge Mockup"></a>
+        	<a href="#" data-toggle="modal" data-target="#civil-mockup"><img src="img/bm.jpg" alt="Bridge Mockup"></a>
         	<h3>Bridge Mockup</h3>
         </div>
 	<div class=" Portfolio-box mba">
-	<a href="#" data-toggle="modal" data-target="#mba-paper"><img src="img/wh.jpg" alt="Paper Presentation"></a>	
-	<h3>Paper Presentation</h3>
+	<a href="#" data-toggle="modal" data-target="#mba-paper"><img src="img/pp.jpg" alt="Paper Presentation"></a>	
+	<h3>MBA Paper Presentation</h3>
 </div>
 
 <div class=" Portfolio-box mba">
-	<a href="#" data-toggle="modal" data-target="#mba-poster"><img src="img/wh.jpg" alt="Poster Making"></a>	
-	<h3>Poster Making</h3>
+	<a href="#" data-toggle="modal" data-target="#mba-poster"><img src="img/posp.jpg" alt="Poster Making"></a>	
+	<h3>MBA Poster Making</h3>
 </div>
 
 <div class=" Portfolio-box mba">
-	<a href="#" data-toggle="modal" data-target="#mba-business"><img src="img/wh.jpg" alt="Business Proposal"></a>	
+	<a href="#" data-toggle="modal" data-target="#mba-business"><img src="img/busprop.jpg" alt="Business Proposal"></a>	
 	<h3>Business Proposal</h3>
 </div>
 
 <div class=" Portfolio-box mba">
-	<a href="#" data-toggle="modal" data-target="#mba-trading"><img src="img/wh.jpg" alt="Mock Trading"></a>	
+	<a href="#" data-toggle="modal" data-target="#mba-trading"><img src="img/ms.jpg" alt="Mock Trading"></a>	
 	<h3>Mock Trading</h3>
 </div>
 
 <div class=" Portfolio-box mba">
-	<a href="#" data-toggle="modal" data-target="#mba-ad"><img src="img/wh.jpg" alt="Ad-Making"></a>	
+	<a href="#" data-toggle="modal" data-target="#mba-ad"><img src="img/adm.jpg" alt="Ad-Making"></a>	
 	<h3>Ad-Making</h3>
 </div>
 
 <div class=" Portfolio-box mba">
-	<a href="#" data-toggle="modal" data-target="#mba-manager"><img src="img/wh.jpg" alt="Young Manager"></a>	
+	<a href="#" data-toggle="modal" data-target="#mba-manager"><img src="img/man.jpg" alt="Young Manager"></a>	
 	<h3>Young Manager</h3>
 </div>
 
 <div class=" Portfolio-box mba">
-	<a href="#" data-toggle="modal" data-target="#mba-quiz"><img src="img/wh.jpg" alt="Business Quiz"></a>	
+	<a href="#" data-toggle="modal" data-target="#mba-quiz"><img src="img/tqmech.jpg" alt="Business Quiz"></a>	
 	<h3>Business Quiz</h3>
 </div>
 
 <div class=" Portfolio-box mba">
-	<a href="#" data-toggle="modal" data-target="#mba-paper"><img src="img/wh.jpg" alt="Paper Presentation"></a>	
-	<h3>Paper Presentation</h3>
+	<a href="#" data-toggle="modal" data-target="#mba-paper"><img src="img/pp.jpg" alt="Paper Presentation"></a>	
+	<h3>MBA Paper Presentation</h3>
 </div>
+
 	  <div class=" Portfolio-box cse">
-	<a href="#" data-toggle="modal" data-target="#cse-paper"><img src="img/wh.jpg" alt="Paper Presentation"></a>	
+	<a href="#" data-toggle="modal" data-target="#cse-paper"><img src="img/pp.jpg" alt="Paper Presentation"></a>	
 	<h3>CSE Paper Presentation</h3>
 </div>
 <div class=" Portfolio-box cse">
-	<a href="#" data-toggle="modal" data-target="#cse-poster"><img src="img/wh.jpg" alt="Poster Presentation"></a>	
+	<a href="#" data-toggle="modal" data-target="#cse-poster"><img src="img/posp.jpg" alt="Poster Presentation"></a>	
 	<h3>CSE Poster Presentation</h3>
 </div>
 <div class=" Portfolio-box cse">
-	<a href="#" data-toggle="modal" data-target="#cse-project"><img src="img/wh.jpg" alt="Project Presentation"></a>	
+	<a href="#" data-toggle="modal" data-target="#cse-project"><img src="img/prp.jpg" alt="Project Presentation"></a>	
 	<h3>CSE Project Presentation</h3>
+</div>
+
+<div class=" Portfolio-box ece">
+    <a href="#" data-toggle="modal" data-target="#ece-paper"><img src="img/pp.jpg" alt="ECE Paper Presentation"></a>    
+    <h3>ECE Paper Presentation</h3>
+</div>
+<div class=" Portfolio-box ece">
+    <a href="#" data-toggle="modal" data-target="#ece-poster"><img src="img/posp.jpg" alt="ECE Poster Presentation"></a>  
+    <h3>ECE Poster Presentation</h3>
+</div>
+<div class=" Portfolio-box ece">
+    <a href="#" data-toggle="modal" data-target="#ece-project"><img src="img/prp.jpg" alt="ECE Project Presentation"></a>    
+    <h3>ECE Project Presentation</h3>
+</div>
+<div class=" Portfolio-box ece">
+    <a href="#" data-toggle="modal" data-target="#ece-circuit"><img src="img/ii.jpg" alt="Circuit Chess"></a>   
+    <h3>Circuit Chess</h3>
+</div>
+<div class=" Portfolio-box ece">
+    <a href="#" data-toggle="modal" data-target="#ece-guess"><img src="img/wh.jpg" alt="Guessing Game"></a> 
+    <h3>Guessing Game</h3>
+</div>
+<div class=" Portfolio-box ece">
+    <a href="#" data-toggle="modal" data-target="#ece-tambola"><img src="img/quizciv.jpg" alt="Technical Tambola"></a>   
+    <h3>Technical Tambola</h3>
 </div>
   </div>
   <!-- <div class="row container"><div class="col-md-4">
@@ -311,7 +330,6 @@ var end = new Date('03/07/2019 10:00:00 AM');
 </script>
 
 <script type="text/javascript">
-
 $(window).load(function(){
   
   
@@ -319,7 +337,6 @@ $(window).load(function(){
       $body = $('body'),
       colW = 100,
       columns = null;
-
   
   $container.isotope({
     // disable window resizing
@@ -354,7 +371,6 @@ $(window).load(function(){
     });
   
 });
-
 </script>
 <!-- model start -->
 <div class="modal fade" id="eee-paper" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -654,11 +670,11 @@ $(window).load(function(){
 	   	<li><b>Registration Fee: </b>Rs. 100/- per head</li>
 	   	<li>The number of students in each contribution and presentation should not exceed 2</li>
 	   	<li>The paper must be in IEEE format (not exceeding 6 pages) including synopsis/abstract in ONE paragraph.</li>
-	   	<li>The paper must be sent to <a href="mailto:bhaswara@gcet.edu.in">bhaswara@gcet.edu.in</a>. <b>Deadline for submission Mar 2- 2019.</b></li>
-	   	<li>The selection will be intimated to the presenters on or before through mail / phone.</li>
-	   	<li>The selected participants should submit ONE hard copy of paper at the time of presentation. 10 Minutes Presentation for each paper (including Q&amp;A and clarifications by the Judges).</li>
-	   	<li>The oral presentation should be in the form of Microsoft PowerPoint slides not exceeding TEN slides (excluding a Title slide and a &quot;Thanks for patient listening&quot; slide, focusing mainly on the contribution made by the authors.</li>
-	   	<li>The papers will be judged on the basis of their depth of the knowledge in the field and presentation skills.</li>
+	   	<li>The paper must be sent to <a href="mailto:bhaswara@gcet.edu.in">bhaswara@gcet.edu.in</a>. <b>Deadline for submission Mar 2- 2019.</b></li>
+	   	<li>The selection will be intimated to the presenters on or before through mail / phone.</li>
+	   	<li>The selected participants should submit ONE hard copy of paper at the time of presentation. 10 Minutes Presentation for each paper (including Q&amp;A and clarifications by the Judges).</li>
+	   	<li>The oral presentation should be in the form of Microsoft PowerPoint slides not exceeding TEN slides (excluding a Title slide and a &quot;Thanks for patient listening&quot; slide, focusing mainly on the contribution made by the authors.</li>
+	   	<li>The papers will be judged on the basis of their depth of the knowledge in the field and presentation skills.</li>
 	   	<li>The decision of the judges will be final and binding.</li>
 	   </ul><br>
 	   
@@ -679,7 +695,7 @@ $(window).load(function(){
 	   <b class="desc">Max. Marks: 50 for Presentation</b><br>
 	   <ol class="desc">
 	   	<li><b>Depth of Content (10 Marks)</b></li>
-	   	<ul><li>Content deals with an important issue in the field of study, includes goals/motivating questions that provide the audience with a sense of the project’s main idea.</li>
+	   	<ul><li>Content deals with an important issue in the field of study, includes goals/motivating questions that provide the audience with a sense of the project’s main idea.</li>
 	   	<li>Information is accurate and includes a complete explanation of key concepts and theories drawing upon relevant literature, as well as a clear description of the results and the importance of the results.</li>
 	   	<li>Applications of theory are included to illuminate issues.</li></ul>
 	   	<li><b>Organization (10 Marks)</b>
@@ -759,9 +775,9 @@ $(window).load(function(){
 	   </ol><br>
 	   <h3>Judging Criteria</h3>
 	   <ol class="desc">
-	   	<li><b>Coverage of Topic (10 Marks):</b> Details on the poster captures the important information about the topic and increases the audiences’ understanding.</li>
-	   	<li><b>Layout &amp; Design (10 Marks):</b>  All information on the poster is in focus and can be easily viewed and identified from a distance.</li>
-	   	<li><b>Mechanics (10 Marks):</b>  No grammatical, spelling or punctuation errors.</li>
+	   	<li><b>Coverage of Topic (10 Marks):</b> Details on the poster captures the important information about the topic and increases the audiences’ understanding.</li>
+	   	<li><b>Layout &amp; Design (10 Marks):</b>  All information on the poster is in focus and can be easily viewed and identified from a distance.</li>
+	   	<li><b>Mechanics (10 Marks):</b>  No grammatical, spelling or punctuation errors.</li>
 	   	<li><b>Presentation (10 Marks):</b> The presentation should be appropriate length. It should not seem hurried or too slow. The presenter clearly and distinctly established connection with the audience</li>
 	   </ol>
 	   <h3>Faculty Coordinators</h3>
@@ -795,7 +811,7 @@ $(window).load(function(){
       </div>
       <div class="modal-body">
       	<h3>Description</h3>
-      	<p class="desc">Each team (max. of 5 students only) will be provided with a standard table and a place for the poster. Display of an A1 size poster describing the operation of the system and its salient features of the Project. Each team will be given 10 minutes to demonstrate/explain all aspects of their system and answer the judge’s questions.</p><br>
+      	<p class="desc">Each team (max. of 5 students only) will be provided with a standard table and a place for the poster. Display of an A1 size poster describing the operation of the system and its salient features of the Project. Each team will be given 10 minutes to demonstrate/explain all aspects of their system and answer the judge’s questions.</p><br>
 	   <h3>Judging Criteria</h3>
 	   <ol class="desc">
 	   	<li>Originality and Creativity of the Student’s contribution.</li>
@@ -1101,14 +1117,14 @@ Management/Finance/Marketing/HR/Entrepreneurship.</li>
 		<li>Judge Decision will be final and will not be subjected to any further discussions.</li>
 		<li>Registration fee per head is Rs. 100/-</li>
 		<li>Total no of rounds are two.</li>
-		<li>In the round 1, the participants will have to come prepared &amp; present an advertisement for a product/service of their choice.</li>
-		<li>Time allowed to present your prepared ad will be Max. 3 minutes.</li>
+		<li>In the round 1, the participants will have to come prepared &amp; present an advertisement for a product/service of their choice.</li>
+		<li>Time allowed to present your prepared ad will be Max. 3 minutes.</li>
 		<li>The ad prepared by the contestant must not contain any obscene words/any subject that hurts the feelings of a culture/language/religion/region.</li>
 		<li>Negative marking for any disobedience of rules.</li>
 		<li>In the round 2, the selected top 5 teams will be competing in this round.</li>
 		<li>In this round certain products or name of services will be given and the teams have to prepare an advertisement for it</li>
 		<li>20 minutes will be given to each team for preparation.</li>
-		<li>Time Limit for present: 3 Minutes</li>
+		<li>Time Limit for present: 3 Minutes</li>
 		<li>Participation certificate will be provided for the participants.</li>
 		<li>Registrations will be accepted till 8th morning 9:30 AM.</li>
 	   </ul><br>
@@ -1188,8 +1204,8 @@ Management/Finance/Marketing/HR/Entrepreneurship.</li>
 		<li>Team can consist of maximum 3 members. The registration fee for this event is Rs.50/- per person (i.e. Rs.150/- per team).</li>
 		<li>The participants shall not be allowed to use mobile or other electronic instruments.</li>
 		<li>Audience shall not give any hints or clues to the competitors.</li>
-		<li>Replacement of any participant  of a team is not allowed after registration.</li>
-		<li>Teams selected for the final rounds  will be allowed to give themselves an appropriate name related to the competition by which they may want to be known</li>
+		<li>Replacement of any participant  of a team is not allowed after registration.</li>
+		<li>Teams selected for the final rounds  will be allowed to give themselves an appropriate name related to the competition by which they may want to be known</li>
 		<li>Totally 6 rounds will be conducted and there will be an elimination from Round 1 to Round 5.</li>
 		<li><ol><li>Round 1: The teams have to participate in Written test.</li><li>Round 2: In this round the teams have to identify SLOGAN &amp; LOGO.</li><li>Round 3: In this round the teams have toIdentify Brand with Company Name.</li><li>Round 4: In this round the teams have to Identify Personality’s,</li><li>Round 5: The teams have to identify AD (Product &amp; Company name).</li><li>Round 6: Rapid Fire Round</li></ol></li>
 		<li>Individual Participation (No Groups)</li>
@@ -1335,6 +1351,290 @@ Management/Finance/Marketing/HR/Entrepreneurship.</li>
 	   <li>J Ashish Reddy (16R11A05A8)</li>
 	   <li>D Bhavani (16R11A05A5)</li>
 	   </ul>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- model end-->
+
+<!-- model start -->
+<div class="modal fade" id="ece-circuit" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title" id="exampleModalLabel">Circuit Chess</h3>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+       <h3>Rules and Regulations</h3>
+       <ol class="desc">
+        <b>Registration Fee: </b>Rs. 50/- per head. <br>
+        <li><b>Round 1: Guess Me</b>
+        <ul>
+            <li>A group of 2 or 3 students are made as a team.</li>
+            <li>The components or devices will be displayed on the projector screen.</li>
+            <li>Participants need to guess the name of component/device and arrange the name using alphabet blocks given to them in specified time limit.</li>
+            <li>Points will be awarded based on the time taken by the team to complete the task.</li>
+            <li>Teams with more points are qualified to the next round.</li>
+        </ul>
+        </li>
+        <li><b>Round 2: Circuit Hunt</b>
+        <ul>
+            <li>Each team need to select a envelope which consists of a name of the circuit and their first hint.</li>
+            <li>Using the hints, they need to search for all the components list.</li>
+            <li>After finding all the chits i.e name of the components, they need to submit all the chits to the coordinator.</li>
+            <li>All the components will be provided to the team along with the circuit diagram.</li>
+            <li>They need to assemble the circuit</li>
+            <li>Points will be allotted to each team based on the time taken by them to complete the task.</li>
+        </ul>
+        </li>
+        <li><b>Round 3: Tricky Circuit</b>
+        <ul>
+            <li>Teams which are qualified in Round 2 can only participate.</li>
+            <li>A circuit is displayed on the projector screen</li>
+            <li>All the participants need to assemble the circuit on breadboard in specified time limit</li>
+            <li>Participants who complete the task in less time are declared as winners.</li>
+            <li>Judge decision will be is the FINAL.</li>
+        </ul>
+        </li>
+       </ol><br>
+       <h3>Faculty Coordinators</h3>
+       <ul class="desc">
+       <li>Mr. A Shanker <a href="tel:+918985169362">8985169362</a></li>
+       <li>Mr. B Ramu <a href="tel:+919966857129">9966857129</a></li>
+       </ul>
+       <h3>Student Coordinators</h3>
+       <ul class="desc">
+            <li>B Divya Rani <a href="tel:+919581212088">9581212088</a></li>
+       </ul>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- model end-->
+<!-- model start -->
+<div class="modal fade" id="ece-guess" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title" id="exampleModalLabel">Guessing Game</h3>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+       <h3>Rules and Regulations</h3>
+       <ul class="desc">
+        <b>Registration Fee: </b>Rs. 50/- per head. <br>
+        <li><b>Round 1: </b>A crossword is provided to the team (a team of two), which consists of Electronic related terms. The teams which complete the crossword in the given time frame will be sent to the second round.</li>
+        <li><b>Round 2: </b>This is a buzzer round. The teams should solve the given crossword and press the buzzer. The five teams who succeed in pressing the buzzer first will be taken to the third round (the last round).</li>
+        <li><b>Round 3: </b>In this round a time frame is given and the teams are expected to answer all the questions in the given time frame. The level of crossword will vary from medium to high. <b>Correct answers are awarded 4 marks, for each wrong answer 1 mark will be deducted and unattempted question carries 0 marks. </b>The team scoring the highest marks will be awarded.</li>
+        <li><b>Note: </b>A team should consist of only 2 members, and the crossword is based on Electronic related terms.</li>
+       </ul><br>
+       <h3>Faculty Coordinators</h3>
+       <ul class="desc">
+       <li>Mr. Appala Raju Uppala <a href="tel:+919848889764">9848889764</a></li>
+       </ul>
+       <h3>Student Coordinators</h3>
+       <ul class="desc">
+            <li>Nidhi Singh <a href="tel:+917013547731">7013547731</a></li>
+            <li>K Sahithi <a href="tel:+919177095797">9177095797</a></li>
+            <li>Siri Sushma <a href="tel:+918522985088">8522985088</a></li>
+            <li>G Saketh <a href="tel:+918639070800">8639070800</a></li>
+            <li>Kiran Mayi <a href="tel:+918121090899">8121090899</a></li>
+       </ul>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- model end-->
+<!-- model start -->
+<div class="modal fade" id="ece-paper" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title" id="exampleModalLabel">Paper Presentation</h3>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <b class="desc">Registration Fee: Rs. 100/- per head</b>
+       <h3>Paper Submission Guidelines</h3>
+       <ul class="desc">
+        <li>Manuscripts must be in English.</li>
+        <li>The manuscript should be in two columns as per IEEE format.</li>
+        <li>The manuscript submitted need to have a minimum length of 3 pages and maximum of 6 pages.</li>
+        <li>The manuscript source format can be in .doc or .pdf format.</li>
+        <li>References must contain full title, place and year of publication, and be listed at the end of the article in the reference section. (Technical reports, memos, unpublished or to be published articles must not be listed as references, only published work in journals and books may be cited as references).</li>
+        <li>Original Contribution: The originality of the scientific contribution should be clearly stated in the manuscript. </li>
+        <li>The softcopy of the manuscript should be sent to <a href="mailto:bhaswara@gcet.edu.in">bhaswara@gcet.edu.in</a></li>
+        <li>The last date for submission is 2nd March 2019.</li>
+        <li><<b>The sample file/ template for preparation of manuscript can be accessed <a href="http://ieeeauthorcenter.ieee.org/wp-content/uploads/JQE-Template.doc">here</a></b></li>
+       </ul><br>
+       <h3>Review Process</h3>
+        <ul class="desc">
+            <li>All manuscripts are reviewed by two independent referees.</li>
+            <li>The screening committee will decide whether all manuscripts submitted will be peer-reviewed or declined out right without going through the review process.</li>
+            <li>Corresponding author will be informed about the paper selection</li>
+        </ul><br>
+        <h3>Paper Presentation Guidelines</h3>
+        <ul class="desc">
+            <li>Recommended Oral presentation files Format: PPT</li>
+            <li>All oral presentations, including questions and answers, should be less than 15 minutes.</li>
+            <li>Judge decision will be the FINAL</li>
+        </ul>
+       <h3>Faculty Coordinators</h3>
+       <ul class="desc">
+       <li>Dr. P Vijaya Basker <a href="tel:+919866284376">9866284376</a></li>
+       <li>Dr. V Satya Srinivas <a href="tel:+919949495157">9949495157</a></li>    
+       </ul>
+       <h3>Student Coordinators</h3>
+       <ul class="desc">
+            <li>P Sajeev <a href="tel:+918897759589">8897759589</a></li>
+       </ul>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- model end-->
+<!-- model start -->
+<div class="modal fade" id="ece-poster" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title" id="exampleModalLabel">Poster Presentation</h3>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <b class="desc">Registration Fee: Rs. 100/- per head</b>
+       <h3>Guidelines</h3>
+       <ul class="desc">
+        <li>Poster size 2*3 feet (Width by height).</li>
+        <li>Your poster should cover the key points of your work.</li>
+        <li>Your Poster should include
+            <ol>
+                <li>College Name</li>
+                <li>Author Names and Affiliation should be below the title</li>
+                <li>Title of your poster should appear in the top in CAPITAL LETTERS about 25mm (1")</li>
+            </ol></li>
+            <li>Abstract</li>
+            <li>Importance of Topic</li>
+            <li>Results may be in the form of comparison, graphs, simulation results, pictures</li>
+            <li>Conclusions</li>
+            <li>Presenters are reminded to dress professionally</li>
+            <li>Group Size: Min - 1, Max - 2</li>
+            <li>Judge Decision will be FINAL</li>
+       </ul><br>
+       <h3>Faculty Coordinators</h3>
+       <ul class="desc">
+       <li>Sri Laxmi <a href="tel:+919866207686">9866207686</a></li>  
+       </ul>
+       <h3>Student Coordinators</h3>
+       <ul class="desc">
+            <li>K Tanmayee <a href="tel:+917207474807">7207474807</a></li>
+       </ul>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- model end-->
+
+<!-- model start -->
+<div class="modal fade" id="ece-project" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title" id="exampleModalLabel">Project Presentation</h3>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+       <h3>Rules and Regulations</h3>
+       <ul class="desc">
+        <li>All candidates interested in taking part in the event  should spot register. Registration fee per head is Rs.100/-</li>
+        <li>The chart should contain just a simple description about their project. The candidates can take help of following points to describe their project in the chart.
+            <ol>
+                <li>Working diagram/image of model, which can be hand drawn or a printed one.</li>
+                <li>Introduction</li>
+                <li>Block diagram</li>
+                <li>Working principle</li>
+                <li>Advantages, Dis-advantages and Future Scope</li>
+            </ol></li>
+            <li>All participants  will be given participation certificate</li>
+            <li>Main event will be held on 8th March 2019 where projects will be displayed by participants.</li>
+            <li>Participants can contact event co-ordinators for any query</li>
+       </ul><br>
+       <h3>Faculty Coordinators</h3>
+       <ul class="desc">
+       <li>Prof. O V P Siva Kumar <a href="tel:+919490933019">9490933019</a></li>
+       <li><li>Mr. A Subramanyam <a href="tel:+919000395815">9000395815</a></li>
+       </ul>
+       <h3>Student Coordinators</h3>
+       <ul class="desc">
+       <li>N Swetha <a href="tel:+918328164055">8328164055</a>
+       </ul>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- model end-->
+
+<!-- model start -->
+<div class="modal fade" id="ece-tambola" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title" id="exampleModalLabel">Technical Tambola</h3>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+       <h3>Description</h3>
+       <p class="desc">This game is similar to the tambola game but instead of reading out the numbers we have few technical questions with respect to Electronics, Computers and Maths which can be solved in 30seconds – 1 minute The team which solves the questions and strikes off all the numbers what they get in the tambola paper then they are considered to be the winners.</p>
+       <ul class="desc">
+            <li>A team can consist of one or two members.</li>
+            <li>The Number of questions to be solved can range from 15-20.</li>
+            <li>The team which solves all the questions(puzzles) and strikes off the answers in their paper before everyone, they are considered to be the winners.</li>
+            <li>The team with second highest number of strike-offs are considered to be the runners.</li>
+            <li>If the number of students participating are 20-30 we consider them as one batch, if there are more than 20-30 we will have two batches and two different set of 15 questions.</li>
+            <li>If there is a tie between two more teams we will be having extra questions for them to decide the winners. So number of rounds are dependent on this factor.</li>
+            <li>Participation fee to be charged can be 50 per Head. </li>
+            <li>Judge decision will be the FINAL.</li>
+       </ul><br>
+       <h3>Faculty Coordinators</h3>
+       <ul class="desc">
+       <li>S Krishna Priya <a href="tel:+919440490378">9440490378</a></li>
+       <li>P Chandra Prakash Reddy <a href="tel:+919676277826">9676277826</a></li>
+       </ul>
+       <h3>Student Coordinators</h3>
+       <ul class="desc">
+       <li>Hari Prem <a href="tel:+917680923675">7680923675</a></li>
+       </ul>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
